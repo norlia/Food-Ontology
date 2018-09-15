@@ -1,0 +1,3536 @@
+@prefix : <http://www.ftsm.ukm.edu.my/myFEL#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.ftsm.ukm.edu.my/myFEL> .
+
+<http://www.ftsm.ukm.edu.my/myFEL> rdf:type owl:Ontology ;
+                                    owl:versionIRI <http://www.ftsm.ukm.edu.my/myFEL> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.ftsm.ukm.edu.my/myFEL#language
+:language rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ftsm.ukm.edu.my/myFEL#IsServedWith
+:IsServedWith rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasAllergic
+:hasAllergic rdf:type owl:ObjectProperty ;
+             rdfs:comment ""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasCompanion
+:hasCompanion rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasCondiment
+:hasCondiment rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasDiseaseSuggest
+:hasDiseaseSuggest rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasEdible
+:hasEdible rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasExchange
+:hasExchange rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasFoodStatus
+:hasFoodStatus rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFifth
+:hasMainIngsFifth rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFirst
+:hasMainIngsFirst rdf:type owl:ObjectProperty ;
+                  rdfs:comment "The first main ingredients"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFourth
+:hasMainIngsFourth rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSecond
+:hasMainIngsSecond rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSeventh
+:hasMainIngsSeventh rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSixth
+:hasMainIngsSixth rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsThird
+:hasMainIngsThird rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMealTimeAvoid
+:hasMealTimeAvoid rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMealTimeSuggest
+:hasMealTimeSuggest rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasProhibit
+:hasProhibit rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasRaceSuggest
+:hasRaceSuggest rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasReligionAvoid
+:hasReligionAvoid rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasSeasonings
+:hasSeasonings rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsFirst
+:hasSecondIngsFirst rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsSecond
+:hasSecondIngsSecond rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsThird
+:hasSecondIngsThird rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasServedWith
+:hasServedWith rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasServingSize
+:hasServingSize rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasServingSizeFree
+:hasServingSizeFree rdf:type owl:ObjectProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasTukar
+:hasTukar rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isTukar .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#isTukar
+:isTukar rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasCHO
+:hasCHO rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasCholesterol
+:hasCholesterol rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasEnergy
+:hasEnergy rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasFat
+:hasFat rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasFibre
+:hasFibre rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMUFA
+:hasMUFA rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFifthPortion
+:hasMainIngsFifthPortion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFirstPortion
+:hasMainIngsFirstPortion rdf:type owl:DatatypeProperty ;
+                         rdfs:comment "the first main ingredients's serving size unit"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFourthPortion
+:hasMainIngsFourthPortion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSecondPortion
+:hasMainIngsSecondPortion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSeventhPortion
+:hasMainIngsSeventhPortion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSixthPortion
+:hasMainIngsSixthPortion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsThirdPortion
+:hasMainIngsThirdPortion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasPUFA
+:hasPUFA rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasPotassium
+:hasPotassium rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasProtein
+:hasProtein rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasSaturatedFat
+:hasSaturatedFat rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasSeasoningPortion
+:hasSeasoningPortion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsFirstPortion
+:hasSecondIngsFirstPortion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsSecondPortion
+:hasSecondIngsSecondPortion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsThirdPortion
+:hasSecondIngsThirdPortion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasServingSizeUnit
+:hasServingSizeUnit rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#hasSodium
+:hasSodium rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ftsm.ukm.edu.my/myFEL#AllergyFoods
+:AllergyFoods rdf:type owl:Class ;
+              rdfs:comment "A damaging immune response by the body to a food substance to which it has become hypersensitive. @OD"^^xsd:string ;
+              rdfs:label "Allergy Food."^^xsd:string ,
+                         "It contains a list of eight allergy foods recognized by the authority."^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BananaFruit
+:BananaFruit rdf:type owl:Class ;
+             rdfs:subClassOf :TropicalFruits ;
+             rdfs:comment """a long curved fruit which grows in clusters and has soft pulpy flesh and yellow skin when ripe. @OD
+
+(a)  long yellow, slightly curved fruit which grows in hot countries; @PC"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Beans
+:Beans rdf:type owl:Class ;
+       rdfs:subClassOf :PlantBased ;
+       rdfs:comment """1. pod, kacang; 2. seed of leguminous plant, biji; 3. (plant) pokok kacang: ~ stalk, batang pokok kacang;
+
+long thin green vegetable, of which you eat the pod or seeds; we had veal with French beans or green beans @PC
+
+ an edible kidney-shaped seed growing in long pods on certain leguminous plants. @OD"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Beef
+:Beef rdf:type owl:Class ;
+      rdfs:subClassOf :Meat .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BerriesFruits
+:BerriesFruits rdf:type owl:Class ;
+               rdfs:subClassOf :Fruits .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Breads
+:Breads rdf:type owl:Class ;
+        rdfs:subClassOf :WheatAndWheatProducts ;
+        rdfs:comment "Food made of flour, water, and yeast mixed together and baked. @OD"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Carbohydrates
+:Carbohydrates rdf:type owl:Class ;
+               rdfs:subClassOf :RawAndProcessedFoods ;
+               rdfs:comment "Macronutrient which provide the body with energy."^^xsd:string ,
+                            """a class of chemical compounds which humans consume in the largest quantities (must be above a threshold amount) and which provide humans with the bulk of energy.
+
+any of a large group of compounds (including sugars, starch, and cellulose) which contain carbon, hydrogen, and oxygen, occur in foods and living tissues, and can be broken down to release energy in the body. @OD"""^^xsd:string ,
+                            "zat makanan (berupa gula dan kanji) yg memberi sumber tenaga kpd benda hidup (yg boleh menggemukkan badan jika diambil berlebihan); @my"^^xsd:string ;
+               rdfs:label "Carbohydrate"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CerealBasedDishes
+:CerealBasedDishes rdf:type owl:Class ;
+                   owl:equivalentClass :Starches ;
+                   rdfs:subClassOf :CookedFoods ;
+                   rdfs:comment "Rice is the main ingredients of dishes."^^xsd:string ;
+                   rdfs:label "Cereal-based Dishes"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CerealGrains
+:CerealGrains rdf:type owl:Class ;
+              rdfs:subClassOf :Starches ;
+              rdfs:comment """cereal is a grain used for food, for example wheat, maize, or rye.  @OD
+
+grain is a wheat or other cultivated cereal used as food.
+
+A cultivated cereal grain used for food."""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CitrusFruits
+:CitrusFruits rdf:type owl:Class ;
+              rdfs:subClassOf :Fruits ;
+              rdfs:comment """a tree of a genus that includes citron, lemon, lime, orange, and grapefruit. @ OD
+
+edible fruit, such as oranges, lemons, grapefruit and limes; @PC
+
+sitrus - bkn tumbuhan (pokok dan pokok renek) dlm genus Citrus, spt pokok limau, oren, lemon, dll.
+
+keluarga bagi  kumpulan makanan buah dalam genus citron atau"""^^xsd:string ;
+              rdfs:label "Citrus Fruit"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Condiments
+:Condiments rdf:type owl:Class ;
+            rdfs:subClassOf :FreeFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CookedFoods
+:CookedFoods rdf:type owl:Class ;
+             rdfs:comment "Prepare food by mixing, combining, and heating the ingredients."^^xsd:string ;
+             rdfs:isDefinedBy "Oxford dictionary."^^xsd:string ;
+             rdfs:label "Cooked Food"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Crackers
+:Crackers rdf:type owl:Class ;
+          rdfs:subClassOf :WheatAndWheatProducts ;
+          rdfs:comment """dry biscuit made of flour and water @PC
+
+a thin dry biscuit, typically eaten with cheese. @OD"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Crustacean
+:Crustacean rdf:type owl:Class ;
+            rdfs:subClassOf :Shellfish ;
+            rdfs:comment """pl. n. Zoology a large group of mainly aquatic arthropods including crabs, lobsters, shrimps, woodlice, and barnacles. @OD
+
+animal with a hard shell, usually living in the sea, such as a lobster, crab, etc.; the crayfish is a freshwater crustacean @PC"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#DairyLikeFoods
+:DairyLikeFoods rdf:type owl:Class ;
+                rdfs:subClassOf :Milk ;
+                rdfs:comment "Dairy-like Food"^^xsd:string ,
+                             """Some specialty products made with milk substitutes (i.e., soy-, nut- or rice-based
+dairy products) are manufactured on equipment shared with milk. @FARE"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Disease
+:Disease rdf:type owl:Class .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#DriedFruits
+:DriedFruits rdf:type owl:Class ;
+             rdfs:subClassOf :Fruits .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Eggs
+:Eggs rdf:type owl:Class ;
+      rdfs:subClassOf :Meat .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Fats
+:Fats rdf:type owl:Class ;
+      rdfs:subClassOf :RawAndProcessedFoods ;
+      rdfs:comment """Macronutrients which stores energy and protects the body against cold.
+
+Macronutrient of natural esters of glycerol and various fatty acids, which are either solid or liqiud at room temperature; and are the main constituents of animal and vegetable fat. @OD
+
+any of a group of natural esters of glycerol and various fatty acids, which are liquid at room temperature."""^^xsd:string ;
+      rdfs:isDefinedBy "Dictionary of Medicine"^^xsd:string ;
+      rdfs:label "Fat"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FifteenSeedFruit
+:FifteenSeedFruit rdf:type owl:Class ;
+                  rdfs:subClassOf :TropicalFruits ;
+                  owl:disjointWith :SegmentedFruits ;
+                  rdfs:comment "A fruit which its seed is more than fifteen."^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FinFish
+:FinFish rdf:type owl:Class ;
+         rdfs:subClassOf :Seafood ;
+         rdfs:comment "A flattened appendage on the body of a fish or other aquatic animal, used for propelling, steering, and balancing. @OD"^^xsd:string ;
+         rdfs:label "Fin Fish"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FlowerVegetables
+:FlowerVegetables rdf:type owl:Class ;
+                  rdfs:subClassOf :Vegetables .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FoodStatus
+:FoodStatus rdf:type owl:Class ;
+            rdfs:comment "Food situation measured by food composition."^^xsd:string ;
+            rdfs:label "Food Status."^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FreeFoods
+:FreeFoods rdf:type owl:Class .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Freshwater
+:Freshwater rdf:type owl:Class ;
+            rdfs:subClassOf :FinFish ;
+            rdfs:comment """of or found in fresh water; not of the sea. @OD
+
+referring to river or lake water, not salt water;  @PC
+
+A fish found in fresh water; not of the sea."""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Fruit
+:Fruit rdf:type owl:Class ;
+       rdfs:subClassOf :MonounsaturatedFats ;
+       rdfs:comment """1 a pear-shaped fruit with a rough leathery skin, smooth oily edible flesh, and a large stone.
+2 the tropical evergreen tree which bears this fruit. [Persea americana.] @OD
+
+tropical fruit with yellow flesh and a very large stone, eaten as a vegetable; @PC
+
+a large stone"""^^xsd:string ;
+       rdfs:label "MUFA Fruit"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FruitVegetables
+:FruitVegetables rdf:type owl:Class ;
+                 rdfs:subClassOf :Vegetables ;
+                 rdfs:comment """Sayuran yang diambil bahagian buah sebagai bahagian yang dimakan (edible) @my
+
+other plant that contains seed and can be eaten as food. @OD
+
+vege- a plant or part of a plant used as food @OD"""^^xsd:string ;
+                 rdfs:label "Fruit Vegetable"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Fruits
+:Fruits rdf:type owl:Class ;
+        rdfs:subClassOf :Carbohydrates ;
+        rdfs:comment "Local fruits that can be eaten by diabetic."^^xsd:string ;
+        rdfs:label "Fruit"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Lamb
+:Lamb rdf:type owl:Class ;
+      rdfs:subClassOf :Meat ;
+      rdfs:comment "the meat from a sheep is called lamb, or sometimes mutton @OD"^^xsd:string ;
+      rdfs:label "Lamb"^^xsd:string ,
+                 "Mutton"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LeafyVegetables
+:LeafyVegetables rdf:type owl:Class ;
+                 rdfs:subClassOf :Vegetables ;
+                 rdfs:comment """....having many leaves or much foliage. @OD
+vege - a plant or part of a plant used as food.
+
+ with lots of leaves;plant grown to be eaten, but not usually sweet; @PC
+
+A plant having many leaves or much foliage."""^^xsd:string ;
+                 rdfs:label "Leafy Vegetable"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LegumeVegetables
+:LegumeVegetables rdf:type owl:Class ;
+                  rdfs:subClassOf :Vegetables ;
+                  rdfs:comment """1 a leguminous plant grown as a crop ().
+2 a seed, pod, or other edible part of a leguminous plant, used as food.
+
+adj. Botany relating to or denoting plants of the pea family (Leguminosae), typically having seeds in pods, distinctive flowers, and root nodules containing nitrogen-fixing bacteria. @OD"""^^xsd:string ;
+                  rdfs:label "Legume Vegetable"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Lentils
+:Lentils rdf:type owl:Class ;
+         rdfs:subClassOf :PlantBased ;
+         rdfs:comment """a high-protein pulse which is dried and then soaked and cooked prior to eating.
+@OD
+
+small round dried seed, used especially in soups and stews; a bowl of lentil soup; soak the lentils overnight before cooking them
+@PC"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LowCHOFoods
+:LowCHOFoods rdf:type owl:Class ;
+             rdfs:subClassOf :FreeFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LowFatMilks
+:LowFatMilks rdf:type owl:Class ;
+             rdfs:subClassOf :Milk ;
+             rdfs:comment "Milk which contain 1% - 0% fat."^^xsd:string ;
+             rdfs:label "Low Fat Milk"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#MalaceousFruits
+:MalaceousFruits rdf:type owl:Class ;
+                 rdfs:subClassOf :Fruits .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#MealTime
+:MealTime rdf:type owl:Class ;
+          rdfs:comment "The time at which a meal is eaten."^^xsd:string ;
+          rdfs:isDefinedBy "Oxford dictionary"^^xsd:string ;
+          rdfs:label "Mealtime @OD"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Meat
+:Meat rdf:type owl:Class ;
+      owl:equivalentClass :MeatDishes ;
+      rdfs:subClassOf :Proteins .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#MeatDishes
+:MeatDishes rdf:type owl:Class ;
+            rdfs:subClassOf :CookedFoods ;
+            rdfs:comment "Meat is the main ingredients of dishes."^^xsd:string ;
+            rdfs:label "Meat Dishes"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Milk
+:Milk rdf:type owl:Class ;
+      rdfs:subClassOf :Carbohydrates ;
+      rdfs:comment "Milk that can be drunk by a diabetic."^^xsd:string ;
+      rdfs:label "Milk"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ModifiedFatFoods
+:ModifiedFatFoods rdf:type owl:Class ;
+                  rdfs:subClassOf :FreeFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Mollusc
+:Mollusc rdf:type owl:Class ;
+         rdfs:subClassOf :Shellfish ;
+         rdfs:comment """animal with no backbone, but usually with a soft body and a shell, such as a snail, an oyster, etc.; 
+edible molluscs such as clams are often made into soup; an octopus is a mollusc though it has no shell @PC
+
+n. Zoology an invertebrate of a large phylum (Mollusca) including snails, slugs, and mussels, with a soft unsegmented body and often an external shell. @OD
+
+
+an invertebrate with no backbone, with a soft unsegmented body and often an external shell."""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#MonounsaturatedFats
+:MonounsaturatedFats rdf:type owl:Class ;
+                     rdfs:subClassOf :Fats ;
+                     rdfs:comment "A saturated fat except for one multiple bond."^^xsd:string ;
+                     rdfs:isDefinedBy "Oxford dictionary."^^xsd:string ;
+                     rdfs:label "Monounsaturated Fat"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Nut
+:Nut rdf:type owl:Class ;
+     rdfs:subClassOf :PUFA ;
+     rdfs:comment """Fruit of a tree with a hard shell of PUFA.
+
+kacang pokok berjenis lemak poli tak tepu.
+
+tree nut"""^^xsd:string ;
+     rdfs:label "PUFA Nut"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#NutButters
+:NutButters rdf:type owl:Class ;
+            rdfs:subClassOf :MonounsaturatedFats ;
+            rdfs:comment "A butter spread made from nut."^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Nuts
+:Nuts rdf:type owl:Class ;
+      rdfs:subClassOf :MonounsaturatedFats .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Oil
+:Oil rdf:type owl:Class ;
+     rdfs:subClassOf :SaturatedFats ;
+     rdfs:comment "A saturated fat oil originated from palm."^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Oils
+:Oils rdf:type owl:Class ;
+      rdfs:subClassOf :PUFA ;
+      rdfs:comment "Any of various viscous liquids which are insoluble in water but soluble in organic solvents and are obtained from polyunsaturated fat plants. @OD"^^xsd:string ;
+      rdfs:label "PUFA Oil"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#OneStoneFruit
+:OneStoneFruit rdf:type owl:Class ;
+               rdfs:subClassOf :TropicalFruits .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PUFA
+:PUFA rdf:type owl:Class ;
+      rdfs:subClassOf :Fats ;
+      rdfs:comment "A fat or oil molecule containing several double or triple bonds between carbon atoms."^^xsd:string ;
+      rdfs:isDefinedBy "Oxford dictionary"^^xsd:string ;
+      rdfs:label "Polyunsaturated Fat"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Peas
+:Peas rdf:type owl:Class ;
+      rdfs:subClassOf :PlantBased .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PlantBased
+:PlantBased rdf:type owl:Class ;
+            owl:equivalentClass :PlantBasedDishes ;
+            rdfs:subClassOf :Proteins ;
+            rdfs:comment "The food group of proteins originated from a plant."^^xsd:string ;
+            rdfs:label "Plant-based"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PlantBasedDishes
+:PlantBasedDishes rdf:type owl:Class ;
+                  rdfs:subClassOf :CookedFoods ;
+                  rdfs:comment "Plant-based protein is the main ingredients of dishes."^^xsd:string ;
+                  rdfs:label "Plant-based Dishes"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Poultry
+:Poultry rdf:type owl:Class ;
+         rdfs:subClassOf :Meat ;
+         rdfs:comment """common farm birds such as ducks or hens, reared for eggs or to be eaten; @PC
+
+chickens, turkeys, ducks, and geese; domestic fowl. @OD"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ProhibitFood
+:ProhibitFood rdf:type owl:Class ;
+              rdfs:comment "Food formally forbid by religious."^^xsd:string ;
+              rdfs:isDefinedBy "Oxford Dictionary."^^xsd:string ;
+              rdfs:label "Prohibit Food"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Proteins
+:Proteins rdf:type owl:Class ;
+          rdfs:subClassOf :RawAndProcessedFoods ;
+          rdfs:comment "Macronutrient of nitrogenous organic compounds which forming structural components of body tissues."^^xsd:string ;
+          rdfs:isDefinedBy "Oxford Dictionary"^^xsd:string ;
+          rdfs:label "Protein"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PrunusFruits
+:PrunusFruits rdf:type owl:Class ;
+              rdfs:subClassOf :Fruits ;
+              rdfs:comment "a tree or shrub of a large genus that includes cherry, almond, plum, peach, and apricot trees"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Race
+:Race rdf:type owl:Class ;
+      rdfs:comment "Merujuk kepada tiga etnik terbesar di Malaysia iaitu Melayu, Cina dan India @my"^^xsd:string ,
+                   "The largest ethnic groups in Malaysia are the Malays, Chinese and Indians."^^xsd:string ;
+      rdfs:isDefinedBy "http://www.malaysia.travel/en/my/about-malaysia/culture-n-heritage/people"^^xsd:string ;
+      rdfs:label "Race"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#RawAndProcessedFoods
+:RawAndProcessedFoods rdf:type owl:Class ;
+                      rdfs:comment "Uncooked of food; and  the action of performing a series of mechanical or chemical operations on food in order to change or preserve it."^^xsd:string ;
+                      rdfs:isDefinedBy "Oxford Dictionary"^^xsd:string ;
+                      rdfs:label "Raw and Processed Food Raw and Processed Food"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Religion
+:Religion rdf:type owl:Class .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#RiceAndRiceProducts
+:RiceAndRiceProducts rdf:type owl:Class ;
+                     rdfs:subClassOf :Starches ;
+                     rdfs:comment """A swamp grass which is cultivated as a source of food, especially in Asia. [Oryza sativa and other species.] Ø the grains of this cereal used as food. @OD
+
+(b)  common food plant, grown mainly in Asian countries;  @PC"""^^xsd:string ;
+                     rdfs:label "Rice and Rice Product."^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SaladVegetables
+:SaladVegetables rdf:type owl:Class ;
+                 rdfs:subClassOf :Vegetables .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Saltwater
+:Saltwater rdf:type owl:Class ;
+           rdfs:subClassOf :FinFish ;
+           rdfs:comment """referring to water which contains salt; @PC
+
+adj. of or found in salt water; living in the sea. @OD
+
+A fish found in salt water; living in the sea."""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SaturatedFats
+:SaturatedFats rdf:type owl:Class ;
+               rdfs:subClassOf :Fats ;
+               rdfs:comment "An organic molecule containing the greatest possible number of hydrogen atoms, without double or triple bonds."^^xsd:string ;
+               rdfs:isDefinedBy "Oxford dictionary"^^xsd:string ;
+               rdfs:label "Saturated Fat"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Seafood
+:Seafood rdf:type owl:Class ;
+         owl:equivalentClass :SeafoodDishes ;
+         rdfs:subClassOf :Proteins .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SeafoodDishes
+:SeafoodDishes rdf:type owl:Class ;
+               rdfs:subClassOf :CookedFoods ;
+               rdfs:comment "Seafood is the main ingredients of dishes."^^xsd:string ;
+               rdfs:label "Seafood Dishes"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Seeds
+:Seeds rdf:type owl:Class ;
+       rdfs:subClassOf :PUFA ;
+       rdfs:comment """a flowering plant's unit of reproduction, capable of developing into another such plant. Ø a quantity of these. @OD
+
+part of a plant which is formed after the flowers die and from which a new plant will grow; @PC"""^^xsd:string ;
+       rdfs:label "PUFA Seed"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SegmentedFruits
+:SegmentedFruits rdf:type owl:Class ;
+                 rdfs:subClassOf :TropicalFruits ;
+                 rdfs:comment """(a)  part of something which seems to form a natural division; @PC
+
+1 each of the parts into which something is or may be divided. @OD
+
+part into which something 
+
+
+buah-buahan yang mempunyai segmen 
+
+A fruit which have part of something which seems to form a natural division,"""^^xsd:string ;
+                 rdfs:label "buah-buahan bersegmen"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ServingSizeUnit
+:ServingSizeUnit rdf:type owl:Class ;
+                 rdfs:label "Household Measurement."^^xsd:string ,
+                            "Serving size unit."^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Shellfish
+:Shellfish rdf:type owl:Class ;
+           rdfs:subClassOf :Seafood ;
+           rdfs:comment """edible animals with shells, such as crabs, oysters, etc.; @PC
+
+n. (pl. same) an aquatic shelled mollusc or crustacean, especially an edible one."""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SoyaBeansProducts
+:SoyaBeansProducts rdf:type owl:Class ;
+                   rdfs:subClassOf :PlantBased ;
+                   rdfs:comment """plant which produces edible beans which have a high protein and fat content and very little starch;  @PC
+
+a bean of the soya plant.
+1 protein derived from the beans of an Asian plant, used as a replacement for animal protein in certain foods. Ø chiefly Brit. soy sauce.
+2 the plant of the pea family which produces these beans. [Glycine max.]
+@OD"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Spread
+:Spread rdf:type owl:Class ;
+        rdfs:subClassOf :PUFA ;
+        rdfs:comment "A unsaturated fat butter substitute made from vegetable oils . @OD"^^xsd:string ;
+        rdfs:label "PUFA Spread"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Starches
+:Starches rdf:type owl:Class ;
+          rdfs:subClassOf :Carbohydrates ;
+          rdfs:comment "Food group which consist mainly of carbohydrate."^^xsd:string ;
+          rdfs:label "Starch"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#StarchyVegetables
+:StarchyVegetables rdf:type owl:Class ;
+                   rdfs:subClassOf :Starches ;
+                   rdfs:comment "Vegetabe which contain a lot of starch."^^xsd:string ;
+                   rdfs:label "Starchy Vegetable"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#StoneFruits
+:StoneFruits rdf:type owl:Class ;
+             rdfs:subClassOf :Fruits ;
+             rdfs:comment "a fruit with flesh or pulp enclosing a stone, such as a peach, plum, or cherry"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SubTropicalFruits
+:SubTropicalFruits rdf:type owl:Class ;
+                   rdfs:subClassOf :Fruits ;
+                   rdfs:comment "Best to store them in the fridge."^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#TenSeedFruit
+:TenSeedFruit rdf:type owl:Class ;
+              rdfs:subClassOf :TropicalFruits ;
+              rdfs:comment "A fruit with two to ten seeeds."^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#TropicalFruits
+:TropicalFruits rdf:type owl:Class ;
+                rdfs:subClassOf :Fruits ;
+                rdfs:comment """Buah-buahan yang tumbuh di kawasan tropika.  @my
+
+Fruits that grow in a tropical area."""^^xsd:string ;
+                rdfs:label "Tropical Fruit"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#TuberVegetables
+:TuberVegetables rdf:type owl:Class ;
+                 rdfs:subClassOf :Vegetables ;
+                 rdfs:comment """root vegetables = vegetables, such as carrots, of which you eat the roots
+
+fat part of an underground root or stem which has buds from which new shoots grow; @PC
+
+tuber = a much thickened underground part of a stem or rhizome, e.g. in the potato, serving as a food reserve and bearing buds from which new plants arise.
+
+root vegie = the fleshy enlarged root of a plant used as a vegetable, e.g. a carrot. @OD"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#VegetableDishes
+:VegetableDishes rdf:type owl:Class ;
+                 owl:equivalentClass :Vegetables ;
+                 rdfs:subClassOf :CookedFoods ;
+                 rdfs:comment "Vegetable is the main ingredients of dishes."^^xsd:string ;
+                 rdfs:label "Vegetable Dishes"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Vegetables
+:Vegetables rdf:type owl:Class ;
+            rdfs:subClassOf :Carbohydrates .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WheatAndWheatProducts
+:WheatAndWheatProducts rdf:type owl:Class ;
+                       rdfs:subClassOf :Starches ;
+                       rdfs:comment """cereal plant of which the grain is used to make flour;  @PC
+
+A cereal widely grown in temperate countries, the grain of which is ground to make flour for bread, pasta, etc. @OD"""^^xsd:string ;
+                       rdfs:label "Wheat and Wheat Product"^^xsd:string .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.ftsm.ukm.edu.my/myFEL#AfternoonSnack
+:AfternoonSnack rdf:type owl:NamedIndividual ,
+                         :MealTime .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Almonds
+:Almonds rdf:type owl:NamedIndividual ,
+                  :Nuts ;
+         :hasAllergic :Peanut ,
+                      :TreeNut ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasFoodStatus :Cooked ;
+         :hasMealTimeSuggest :AfternoonSnack ,
+                             :Breakfast ,
+                             :MorningSnack ;
+         :hasServingSize :Nuts ;
+         :hasEnergy "48.0"^^xsd:float ;
+         :hasFat "4.2"^^xsd:float ;
+         :hasMUFA "2.7"^^xsd:float ;
+         :hasPUFA "1.0"^^xsd:float ;
+         :hasSaturatedFat "0.3"^^xsd:float ;
+         :hasServingSizeUnit "6.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Anchovies
+:Anchovies rdf:type owl:NamedIndividual ,
+                    :Saltwater ;
+           :hasAllergic :Fishes ;
+           :hasExchange :Vegetables ;
+           :hasServingSize :Cup ;
+           :hasTukar :DriedPrawn ,
+                     :PinkPrawn ;
+           :hasCholesterol "24.7"^^xsd:float ;
+           :hasEnergy "33.3"^^xsd:float ;
+           :hasFat "0.3"^^xsd:float ;
+           :hasPotassium "115.3"^^xsd:float ;
+           :hasProtein "7.7"^^xsd:float ;
+           :hasServingSizeUnit "0.33"^^xsd:float ;
+           :hasSodium "505.3"^^xsd:float ;
+           rdfs:isDefinedBy "FCD"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#AngledLoofah
+:AngledLoofah rdf:type owl:NamedIndividual ,
+                       :FruitVegetables ;
+              :hasMealTimeSuggest :Lunch ;
+              :hasServingSize :CupChopped ;
+              :hasCHO "4.1"^^xsd:float ;
+              :hasEnergy "28.0"^^xsd:float ;
+              :hasFat "0.6"^^xsd:float ;
+              :hasFibre "0.8"^^xsd:float ;
+              :hasPotassium "200.0"^^xsd:float ;
+              :hasProtein "1.5"^^xsd:float ;
+              :hasServingSizeUnit "1.0"^^xsd:float ;
+              :hasSodium "63.0"^^xsd:float ;
+              rdfs:comment """Petola Segi @my
+"""^^xsd:string ;
+              rdfs:isDefinedBy "FCD"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Apple
+:Apple rdf:type owl:NamedIndividual ,
+                :MalaceousFruits ;
+       :hasMealTimeSuggest :AfternoonSnack ,
+                           :Breakfast ,
+                           :MorningSnack ;
+       :hasServingSize :ExtraSmall ;
+       :hasCHO "13.95"^^xsd:float ;
+       :hasEnergy "53.0"^^xsd:float ;
+       :hasFibre "2.4"^^xsd:float ;
+       :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ArtificialSweeteners
+:ArtificialSweeteners rdf:type owl:NamedIndividual ;
+                      owl:sameAs :SugarSubstitutes .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Avocado
+:Avocado rdf:type owl:NamedIndividual ,
+                  :Fruit ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasFoodStatus :Cooked ;
+         :hasMealTimeSuggest :AfternoonSnack ,
+                             :Breakfast ,
+                             :MorningSnack ;
+         :hasServingSize :Tablespoon ;
+         :hasEnergy "45.0"^^xsd:float ;
+         :hasFat "4.1"^^xsd:float ;
+         :hasMUFA "2.7"^^xsd:float ;
+         :hasPUFA "0.5"^^xsd:float ;
+         :hasSaturatedFat "0.6"^^xsd:float ;
+         :hasServingSizeUnit "2.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BabyCorn
+:BabyCorn rdf:type owl:NamedIndividual ,
+                   :FlowerVegetables ;
+          :hasMealTimeSuggest :Dinner ,
+                              :Lunch ;
+          :hasServingSize :Cup ;
+          :hasCHO "5.0"^^xsd:float ;
+          :hasEnergy "20.0"^^xsd:float ;
+          :hasFibre "2.0"^^xsd:float ;
+          :hasServingSizeUnit "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Baked
+:Baked rdf:type owl:NamedIndividual ,
+                :FoodStatus .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BakedBeans
+:BakedBeans rdf:type owl:NamedIndividual ,
+                     :Beans ;
+            :hasDiseaseSuggest :Diabetes ;
+            :hasFoodStatus :Cooked ;
+            :hasMealTimeSuggest :AfternoonSnack ,
+                                :Breakfast ,
+                                :MorningSnack ;
+            :hasServingSize :Cup ;
+            :hasCHO "17.9"^^xsd:float ;
+            :hasEnergy "80.0"^^xsd:float ;
+            :hasFat "0.31"^^xsd:float ;
+            :hasFibre "3.5"^^xsd:float ;
+            :hasPotassium "190.0"^^xsd:float ;
+            :hasProtein "4.02"^^xsd:float ;
+            :hasServingSizeUnit "0.33"^^xsd:float ;
+            :hasSodium "290.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BakedRojakTofu
+:BakedRojakTofu rdf:type owl:NamedIndividual ,
+                         :PlantBasedDishes ;
+                :hasMainIngsFirst :RegularTofu ;
+                :hasSecondIngsFirst :Carrot ;
+                :hasSecondIngsSecond :Cucumber ;
+                :hasSecondIngsThird :MungBeanSprouts ;
+                :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                :hasSecondIngsFirstPortion "0.25"^^xsd:float ;
+                :hasSecondIngsSecondPortion "0.25"^^xsd:float ;
+                :hasSecondIngsThirdPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Banana
+:Banana rdf:type owl:NamedIndividual ,
+                 :BananaFruit ;
+        :hasMealTimeSuggest :AfternoonSnack ,
+                            :Breakfast ,
+                            :MorningSnack ;
+        :hasServingSize :ExtraSmall ;
+        :hasCHO "18.5"^^xsd:float ;
+        :hasEnergy "72.0"^^xsd:float ;
+        :hasFibre "2.1"^^xsd:float ;
+        :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Beef
+:Beef rdf:type owl:NamedIndividual ,
+               :ProhibitFood .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BeefCurry
+:BeefCurry rdf:type owl:NamedIndividual ,
+                    :MeatDishes ;
+           :hasMainIngsFirst :BeefSirloin ;
+           :hasMainIngsSecond :CornOil ;
+           :hasSecondIngsFirst :Tomato ;
+           :hasSecondIngsSecond :Potato ;
+           :hasSecondIngsThird :Tomato ;
+           :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+           :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+           :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+           :hasSecondIngsSecondPortion "0.25"^^xsd:float ;
+           :hasSecondIngsThirdPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BeefSirloin
+:BeefSirloin rdf:type owl:NamedIndividual ,
+                      :Beef ;
+             :hasDiseaseSuggest :Diabetes ;
+             :hasFoodStatus :Boiled ;
+             :hasMealTimeSuggest :Dinner ,
+                                 :Lunch ;
+             :hasProhibit :Beef ;
+             :hasServingSize :Matchbox ;
+             :hasCholesterol "16.0"^^xsd:float ;
+             :hasEnergy "52.0"^^xsd:float ;
+             :hasFat "1.6"^^xsd:float ;
+             :hasProtein "8.6"^^xsd:float ;
+             :hasSaturatedFat "0.6"^^xsd:float ;
+             :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BeefSoup
+:BeefSoup rdf:type owl:NamedIndividual ,
+                   :MeatDishes ;
+          :hasMainIngsFirst :BeefSirloin ;
+          :hasSecondIngsFirst :Carrot ;
+          :hasSecondIngsSecond :Potato ;
+          :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+          :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+          :hasSecondIngsSecondPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BeefSpicySour
+:BeefSpicySour rdf:type owl:NamedIndividual ,
+                        :MeatDishes ;
+               :hasMainIngsFirst :BeefSirloin ;
+               :hasMainIngsSecond :CornOil ;
+               :hasSecondIngsFirst :Tomato ;
+               :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+               :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+               :hasSecondIngsFirstPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BitterGourd
+:BitterGourd rdf:type owl:NamedIndividual ,
+                      :FruitVegetables ;
+             :hasFoodStatus :Cooked ;
+             :hasMealTimeSuggest :Lunch ;
+             :hasServingSize :Cup ;
+             :hasCHO "5.36"^^xsd:float ;
+             :hasEnergy "24.0"^^xsd:float ;
+             :hasFibre "2.5"^^xsd:float ;
+             :hasProtein "1.04"^^xsd:float ;
+             :hasServingSizeUnit "0.5"^^xsd:float ;
+             rdfs:comment """Peria @my
+Balsam Pear @en"""^^xsd:string ;
+             rdfs:isDefinedBy """USDA
+
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BlackPepperBeef
+:BlackPepperBeef rdf:type owl:NamedIndividual ,
+                          :MeatDishes ;
+                 :hasMainIngsFirst :BeefSirloin ;
+                 :hasMainIngsSecond :CornOil ;
+                 :hasSecondIngsFirst :Tomato ;
+                 :hasSecondIngsSecond :Carrot ;
+                 :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                 :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                 :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+                 :hasSecondIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BlackPepperChicken
+:BlackPepperChicken rdf:type owl:NamedIndividual ,
+                             :MeatDishes ;
+                    :hasMainIngsFirst :ChickenBreast ;
+                    :hasMainIngsSecond :CornOil ;
+                    :hasSecondIngsFirst :Tomato ;
+                    :hasSecondIngsSecond :Carrot ;
+                    :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                    :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                    :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+                    :hasSecondIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BlackPepperLamb
+:BlackPepperLamb rdf:type owl:NamedIndividual ,
+                          :MeatDishes ;
+                 :hasMainIngsFirst :LambLoin ;
+                 :hasMainIngsSecond :CornOil ;
+                 :hasSecondIngsFirst :Tomato ;
+                 :hasSecondIngsSecond :Carrot ;
+                 :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                 :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                 :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+                 :hasSecondIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BlendedOil
+:BlendedOil rdf:type owl:NamedIndividual ,
+                     :Oils .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Boiled
+:Boiled rdf:type owl:NamedIndividual ,
+                 :FoodStatus .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Breakfast
+:Breakfast rdf:type owl:NamedIndividual ,
+                    :MealTime .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Brinjal
+:Brinjal rdf:type owl:NamedIndividual ,
+                  :FruitVegetables ;
+         :hasFoodStatus :Boiled ;
+         :hasMealTimeSuggest :Dinner ,
+                             :Lunch ;
+         :hasServingSize :CupCubesOneInch ;
+         :hasCHO "4.32"^^xsd:float ;
+         :hasEnergy "17.0"^^xsd:float ;
+         :hasFat "0.11"^^xsd:float ;
+         :hasFibre "1.2"^^xsd:float ;
+         :hasPotassium "61.0"^^xsd:float ;
+         :hasProtein "0.41"^^xsd:float ;
+         :hasServingSizeUnit "0.5"^^xsd:float ;
+         :hasSodium "0.0"^^xsd:float ;
+         rdfs:label "Solanum melongena @sc."^^xsd:string ,
+                    """Terung @my.
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Broccoli
+:Broccoli rdf:type owl:NamedIndividual ,
+                   :FlowerVegetables ;
+          :hasDiseaseSuggest :Diabetes ;
+          :hasFoodStatus :Boiled ;
+          :hasMealTimeSuggest :Dinner ,
+                              :Lunch ;
+          :hasServingSize :CupChopped ;
+          :hasCHO "5.6"^^xsd:float ;
+          :hasEnergy "27.0"^^xsd:float ;
+          :hasFat "0.32"^^xsd:float ;
+          :hasFibre "2.6"^^xsd:float ;
+          :hasPotassium "229.0"^^xsd:float ;
+          :hasProtein "1.86"^^xsd:float ;
+          :hasServingSizeUnit "0.5"^^xsd:float ;
+          :hasSodium "32.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#BrownRice
+:BrownRice rdf:type owl:NamedIndividual ,
+                    :RiceAndRiceProducts ;
+           :hasDiseaseSuggest :Diabetes ;
+           :hasFoodStatus :Cooked ;
+           :hasMealTimeSuggest :Breakfast ,
+                               :Dinner ,
+                               :Lunch ;
+           :hasServingSize :Cup ;
+           :hasCHO "15.28"^^xsd:float ;
+           :hasEnergy "73.0"^^xsd:float ;
+           :hasFat "0.54"^^xsd:float ;
+           :hasFibre "1.2"^^xsd:float ;
+           :hasProtein "1.51"^^xsd:float ;
+           :hasServingSizeUnit "0.33"^^xsd:float ;
+           :hasSodium "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Buddha
+:Buddha rdf:type owl:NamedIndividual ,
+                 :Religion .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Cabbage
+:Cabbage rdf:type owl:NamedIndividual ,
+                  :LeafyVegetables ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasFoodStatus :Cooked ;
+         :hasMealTimeSuggest :Dinner ,
+                             :Lunch ;
+         :hasServingSize :CupChopped ;
+         :hasCHO "4.13"^^xsd:float ;
+         :hasEnergy "17.0"^^xsd:float ;
+         :hasFibre "1.4"^^xsd:float ;
+         :hasProtein "0.95"^^xsd:float ;
+         :hasServingSizeUnit "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Canned
+:Canned rdf:type owl:NamedIndividual ,
+                 :FoodStatus .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Carrot
+:Carrot rdf:type owl:NamedIndividual ,
+                 :TuberVegetables ;
+        :hasDiseaseSuggest :Diabetes ;
+        :hasServingSize :CupStrips ;
+        :hasCHO "11.69"^^xsd:float ;
+        :hasEnergy "50.0"^^xsd:float ;
+        :hasFibre "3.4"^^xsd:float ;
+        :hasPotassium "390.0"^^xsd:float ;
+        :hasServingSizeUnit "1.0"^^xsd:float ;
+        :hasSodium "84.0"^^xsd:float ;
+        rdfs:label """Daucus carota sativa @sc
+"""^^xsd:string ,
+                   """Lobak Merah @my
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Cashews
+:Cashews rdf:type owl:NamedIndividual ,
+                  :Nuts ;
+         :hasAllergic :Peanut ,
+                      :TreeNut ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasFoodStatus :Cooked ;
+         :hasMealTimeSuggest :AfternoonSnack ,
+                             :Breakfast ,
+                             :MorningSnack ;
+         :hasServingSize :Nuts ;
+         :hasEnergy "52.0"^^xsd:float ;
+         :hasFat "4.2"^^xsd:float ;
+         :hasMUFA "2.5"^^xsd:float ;
+         :hasPUFA "0.7"^^xsd:float ;
+         :hasSaturatedFat "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Cauliflower
+:Cauliflower rdf:type owl:NamedIndividual ,
+                      :FlowerVegetables ;
+             :hasDiseaseSuggest :Diabetes ;
+             :hasFoodStatus :Boiled ;
+             :hasMealTimeSuggest :Dinner ,
+                                 :Lunch ;
+             :hasServingSize :CupSlices ;
+             :hasCHO "2.6"^^xsd:float ;
+             :hasEnergy "14.0"^^xsd:float ;
+             :hasFat "0.3"^^xsd:float ;
+             :hasFibre "1.4"^^xsd:float ;
+             :hasPotassium "88.0"^^xsd:float ;
+             :hasProtein "1.1"^^xsd:float ;
+             :hasServingSizeUnit "0.5"^^xsd:float ;
+             :hasSodium "9.0"^^xsd:float ;
+             rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChiaSeeds
+:ChiaSeeds rdf:type owl:NamedIndividual ,
+                    :Seeds ;
+           :hasMealTimeSuggest :AfternoonSnack ,
+                               :Breakfast ,
+                               :MorningSnack ;
+           :hasServingSize :Tablespoon .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChickenBreast
+:ChickenBreast rdf:type owl:NamedIndividual ,
+                        :Poultry ;
+               :hasDiseaseSuggest :Diabetes ;
+               :hasExchange :Meat ;
+               :hasFoodStatus :Cooked ;
+               :hasMealTimeSuggest :Dinner ,
+                                   :Lunch ;
+               :hasServingSize :Matchbox ;
+               :hasCholesterol "24.0"^^xsd:float ;
+               :hasEnergy "47.0"^^xsd:float ;
+               :hasFat "1.0"^^xsd:float ;
+               :hasProtein "8.8"^^xsd:float ;
+               :hasSaturatedFat "0.3"^^xsd:float ;
+               :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChickenCurry
+:ChickenCurry rdf:type owl:NamedIndividual ,
+                       :MeatDishes ;
+              :hasMainIngsFirst :ChickenBreast ;
+              :hasMainIngsSecond :CornOil ;
+              :hasSecondIngsFirst :Tomato ;
+              :hasSecondIngsSecond :Potato ;
+              :hasSecondIngsThird :Carrot ;
+              :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+              :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+              :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+              :hasSecondIngsSecondPortion "0.25"^^xsd:float ;
+              :hasSecondIngsThirdPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChickenSoup
+:ChickenSoup rdf:type owl:NamedIndividual ,
+                      :MeatDishes ;
+             :hasMainIngsFirst :ChickenBreast ;
+             :hasSecondIngsFirst :Carrot ;
+             :hasSecondIngsSecond :Potato ;
+             :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+             :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+             :hasSecondIngsSecondPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChickenSpicySour
+:ChickenSpicySour rdf:type owl:NamedIndividual ,
+                           :MeatDishes ;
+                  :hasMainIngsFirst :ChickenBreast ;
+                  :hasMainIngsSecond :CornOil ;
+                  :hasSecondIngsFirst :Tomato ;
+                  :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                  :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                  :hasSecondIngsFirstPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Chickpeas
+:Chickpeas rdf:type owl:NamedIndividual ,
+                    :Beans ;
+           :hasDiseaseSuggest :Diabetes ;
+           :hasFoodStatus :Cooked ;
+           :hasMealTimeSuggest :AfternoonSnack ,
+                               :Breakfast ,
+                               :MorningSnack ;
+           :hasRaceSuggest :Indian ,
+                           :Malay ;
+           :hasServingSize :Cup ;
+           :hasCHO "22.48"^^xsd:float ;
+           :hasEnergy "134.0"^^xsd:float ;
+           :hasFat "2.12"^^xsd:float ;
+           :hasFibre "6.2"^^xsd:float ;
+           :hasPotassium "239.0"^^xsd:float ;
+           :hasProtein "7.27"^^xsd:float ;
+           :hasServingSizeUnit "0.5"^^xsd:float ;
+           :hasSodium "6.0"^^xsd:float ;
+           rdfs:comment "Msian FCD do not provide the nutrient composition of cooked chickpea."^^xsd:string ;
+           rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChilliMilkyBeef
+:ChilliMilkyBeef rdf:type owl:NamedIndividual ,
+                          :MeatDishes ;
+                 :hasMainIngsFirst :BeefSirloin ;
+                 :hasMainIngsSecond :SkimMilk ;
+                 :hasSecondIngsFirst :Potato ;
+                 :hasSecondIngsSecond :Tomato ;
+                 :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                 :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                 :hasSecondIngsFirstPortion "0.25"^^xsd:float ;
+                 :hasSecondIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChilliMilkyChicken
+:ChilliMilkyChicken rdf:type owl:NamedIndividual ,
+                             :MeatDishes ;
+                    :hasMainIngsFirst :ChickenBreast ;
+                    :hasMainIngsSecond :SkimMilk ;
+                    :hasSecondIngsFirst :Potato ;
+                    :hasSecondIngsSecond :Tomato ;
+                    :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                    :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                    :hasSecondIngsFirstPortion "0.25"^^xsd:float ;
+                    :hasSecondIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChilliMilkyLamb
+:ChilliMilkyLamb rdf:type owl:NamedIndividual ,
+                          :MeatDishes ;
+                 :hasMainIngsFirst :LambLoin ;
+                 :hasMainIngsSecond :SkimMilk ;
+                 :hasSecondIngsFirst :Potato ;
+                 :hasSecondIngsSecond :Tomato ;
+                 :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                 :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                 :hasSecondIngsFirstPortion "0.25"^^xsd:float ;
+                 :hasSecondIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChilliMilkyPrawn
+:ChilliMilkyPrawn rdf:type owl:NamedIndividual ,
+                           :SeafoodDishes ;
+                  :hasMainIngsFirst :PinkPrawn ;
+                  :hasMainIngsSecond :SkimMilk ;
+                  :hasRaceSuggest :Malay ;
+                  :hasSecondIngsFirst :Pineapple ;
+                  :hasMainIngsFirstPortion "0.5"^^xsd:float ,
+                                           "1.0"^^xsd:float ;
+                  :hasSecondIngsFirstPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Chinese
+:Chinese rdf:type owl:NamedIndividual ,
+                  :Race .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChineseCabbage
+:ChineseCabbage rdf:type owl:NamedIndividual ,
+                         :LeafyVegetables ;
+                :hasDiseaseSuggest :Diabetes ;
+                :hasFoodStatus :Cooked ;
+                :hasMealTimeSuggest :Dinner ,
+                                    :Lunch ;
+                :hasRaceSuggest :Chinese ;
+                :hasServingSize :CupShredded ;
+                :hasCHO "1.43"^^xsd:float ;
+                :hasEnergy "8.0"^^xsd:float ;
+                :hasFibre "1.0"^^xsd:float ;
+                :hasProtein "0.89"^^xsd:float ;
+                :hasServingSizeUnit "0.5"^^xsd:float ;
+                rdfs:comment "ipe-tsai @cn"^^xsd:string ;
+                rdfs:isDefinedBy """USDA
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ChineseKale
+:ChineseKale rdf:type owl:NamedIndividual ,
+                      :LeafyVegetables ;
+             :hasDiseaseSuggest :Diabetes ;
+             :hasFoodStatus :Cooked ;
+             :hasMealTimeSuggest :Dinner ,
+                                 :Lunch ;
+             :hasRaceSuggest :Chinese ;
+             :hasServingSize :Cup ;
+             :hasCHO "1.68"^^xsd:float ;
+             :hasEnergy "10.0"^^xsd:float ;
+             :hasFibre "1.1"^^xsd:float ;
+             :hasProtein "0.5"^^xsd:float ;
+             :hasServingSizeUnit "1.0"^^xsd:float ;
+             rdfs:comment "ChineseBroccoli @US"^^xsd:string ;
+             rdfs:isDefinedBy """USDA
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Christian
+:Christian rdf:type owl:NamedIndividual ,
+                    :Religion .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Cockle
+:Cockle rdf:type owl:NamedIndividual ,
+                 :Mollusc ;
+        :hasAllergic :ShellFish ;
+        :hasFoodStatus :Boiled ;
+        :hasMealTimeSuggest :Dinner ,
+                            :Lunch ;
+        :hasServingSize :Cockles ;
+        :hasCHO "3.9"^^xsd:float ;
+        :hasEnergy "45.0"^^xsd:float ;
+        :hasFat "0.3"^^xsd:float ;
+        :hasPotassium "102.0"^^xsd:float ;
+        :hasProtein "6.6"^^xsd:float ;
+        :hasServingSizeUnit "30.0"^^xsd:float ;
+        :hasSodium "273.0"^^xsd:float ;
+        rdfs:comment "Kerang @my"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Cockles
+:Cockles rdf:type owl:NamedIndividual ,
+                  :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Cooked
+:Cooked rdf:type owl:NamedIndividual ,
+                 :FoodStatus .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CornOil
+:CornOil rdf:type owl:NamedIndividual ,
+                  :Oils ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasServingSize :Teaspoon ;
+         :hasEnergy "40.0"^^xsd:float ;
+         :hasFat "4.5"^^xsd:float ;
+         :hasMUFA "1.2"^^xsd:float ;
+         :hasPUFA "2.5"^^xsd:float ;
+         :hasSaturatedFat "0.6"^^xsd:float ;
+         :hasServingSizeUnit "1.0"^^xsd:float ;
+         rdfs:label """Minyak Jagung
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CowMilk
+:CowMilk rdf:type owl:NamedIndividual ,
+                  :AllergyFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Crab
+:Crab rdf:type owl:NamedIndividual ,
+               :Crustacean ;
+      :hasAllergic :ShellFish ;
+      :hasFoodStatus :Steamed ;
+      :hasMealTimeSuggest :Dinner ,
+                          :Lunch ;
+      :hasServingSize :WholeMedium ;
+      :hasCholesterol "28.0"^^xsd:float ;
+      :hasEnergy "29.0"^^xsd:float ;
+      :hasFat "0.5"^^xsd:float ;
+      :hasProtein "5.7"^^xsd:float ;
+      :hasSaturatedFat "0.1"^^xsd:float ;
+      :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CrabSoup
+:CrabSoup rdf:type owl:NamedIndividual ,
+                   :SeafoodDishes ;
+          :hasMainIngsFirst :Crab ;
+          :hasMainIngsSecond :CornOil ;
+          :hasRaceSuggest :Chinese ;
+          :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+          :hasMainIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Cucumber
+:Cucumber rdf:type owl:NamedIndividual ,
+                   :FruitVegetables ;
+          :hasMealTimeSuggest :Breakfast ,
+                              :Dinner ,
+                              :Lunch ;
+          :hasServingSize :CupSlices ;
+          :hasCHO "3.3"^^xsd:float ;
+          :hasEnergy "15.0"^^xsd:float ;
+          :hasFibre "0.6"^^xsd:float ;
+          :hasPotassium "73.0"^^xsd:float ;
+          :hasProtein "0.5"^^xsd:float ;
+          :hasServingSizeUnit "1.0"^^xsd:float ;
+          :hasSodium "13.0"^^xsd:float ;
+          rdfs:isDefinedBy """FCD
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Cup
+:Cup rdf:type owl:NamedIndividual ,
+              :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CupChopped
+:CupChopped rdf:type owl:NamedIndividual ,
+                     :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CupChunks
+:CupChunks rdf:type owl:NamedIndividual ,
+                    :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CupCubes
+:CupCubes rdf:type owl:NamedIndividual ,
+                   :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CupCubesOneInch
+:CupCubesOneInch rdf:type owl:NamedIndividual ,
+                          :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CupDiced
+:CupDiced rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CupHalfInchPieces
+:CupHalfInchPieces rdf:type owl:NamedIndividual ,
+                            :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CupShredded
+:CupShredded rdf:type owl:NamedIndividual ,
+                      :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CupSlices
+:CupSlices rdf:type owl:NamedIndividual ,
+                    :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#CupStrips
+:CupStrips rdf:type owl:NamedIndividual ,
+                    :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#DessertSpoon
+:DessertSpoon rdf:type owl:NamedIndividual ,
+                       :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#DhalGravy
+:DhalGravy rdf:type owl:NamedIndividual ,
+                    :PlantBasedDishes ;
+           :IsServedWith :WholeMealChapatti ;
+           :hasMainIngsFirst :YellowDhal ;
+           :hasMainIngsSecond :PalmOil ;
+           :hasRaceSuggest :Indian ;
+           :hasSecondIngsFirst :Carrot ;
+           :hasSecondIngsSecond :Tomato ;
+           :hasSecondIngsThird :Brinjal ;
+           :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+           :hasMainIngsSecondPortion "1.0"^^xsd:float ;
+           :hasSecondIngsFirstPortion "0.33"^^xsd:float ;
+           :hasSecondIngsSecondPortion "0.33"^^xsd:float ;
+           :hasSecondIngsThirdPortion "0.33"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Diabetes
+:Diabetes rdf:type owl:NamedIndividual ,
+                   :Disease ;
+          :hasDiseaseSuggest :Diabetes ;
+          :hasMealTimeSuggest :Breakfast ;
+          :hasServingSize :Tablespoon ;
+          :hasEnergy "55.0"^^xsd:float ;
+          :hasFat "4.3"^^xsd:float ;
+          :hasMUFA "0.8"^^xsd:float ;
+          :hasPUFA "3.0"^^xsd:float ;
+          :hasSaturatedFat "0.4"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Dinner
+:Dinner rdf:type owl:NamedIndividual ,
+                 :MealTime .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#DriedApricot
+:DriedApricot rdf:type owl:NamedIndividual ,
+                       :DriedFruits ;
+              :hasMealTimeSuggest :AfternoonSnack ,
+                                  :Breakfast ,
+                                  :MorningSnack ;
+              :hasServingSize :Halves ;
+              :hasCHO "17.5"^^xsd:float ;
+              :hasEnergy "67.0"^^xsd:float ;
+              :hasFibre "2.0"^^xsd:float ;
+              :hasServingSizeUnit "8.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#DriedPrawn
+:DriedPrawn rdf:type owl:NamedIndividual ,
+                     :Crustacean ;
+            :hasAllergic :ShellFish ;
+            :hasExchange :Vegetables ;
+            :hasServingSize :Tablespoon ;
+            :hasCHO "0.2"^^xsd:float ;
+            :hasCholesterol "64.0"^^xsd:float ;
+            :hasEnergy "46.0"^^xsd:float ;
+            :hasFat "0.4"^^xsd:float ;
+            :hasProtein "10.4"^^xsd:float ;
+            :hasServingSizeUnit "2.0"^^xsd:float ;
+            rdfs:isDefinedBy "FCD"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#EggWhite
+:EggWhite rdf:type owl:NamedIndividual ,
+                   :Eggs ;
+          :hasServingSize :EggWhites ;
+          :hasEnergy "33.0"^^xsd:float ;
+          :hasProtein "6.9"^^xsd:float ;
+          :hasServingSizeUnit "2.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#EggWhites
+:EggWhites rdf:type owl:NamedIndividual ,
+                    :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Eggs
+:Eggs rdf:type owl:NamedIndividual ,
+               :AllergyFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ExtraSmall
+:ExtraSmall rdf:type owl:NamedIndividual ,
+                     :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#False
+:False rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FatFree
+:FatFree rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FishCurry
+:FishCurry rdf:type owl:NamedIndividual ,
+                    :SeafoodDishes ;
+           :hasMainIngsFirst :SpanishMackerel ;
+           :hasMainIngsSecond :CornOil ;
+           :hasRaceSuggest :Indian ;
+           :hasSecondIngsFirst :Tomato ;
+           :hasSecondIngsSecond :Brinjal ;
+           :hasSecondIngsThird :LadysFinger ;
+           :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+           :hasMainIngsSecondPortion "1.0"^^xsd:float ;
+           :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+           :hasSecondIngsSecondPortion "0.5"^^xsd:float ;
+           :hasSecondIngsThirdPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FishSoup
+:FishSoup rdf:type owl:NamedIndividual ,
+                   :SeafoodDishes ;
+          :hasMainIngsFirst :RedSnapper ;
+          :hasMainIngsSecond :PalmOil ;
+          :hasRaceSuggest :Chinese ;
+          :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+          :hasMainIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FishSteak
+:FishSteak rdf:type owl:NamedIndividual ,
+                    :SeafoodDishes ;
+           :hasMainIngsFirst :SpanishMackerel ;
+           :hasMainIngsFirstPortion "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Fishes
+:Fishes rdf:type owl:NamedIndividual ,
+                 :AllergyFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Flaxseed
+:Flaxseed rdf:type owl:NamedIndividual ,
+                   :Seeds ;
+          :hasDiseaseSuggest :Diabetes ;
+          :hasMealTimeSuggest :Breakfast .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FourAngledBean
+:FourAngledBean rdf:type owl:NamedIndividual ,
+                         :LegumeVegetables ;
+                :hasRaceSuggest :Malay ;
+                :hasServingSize :CupDiced ;
+                :hasCHO "1.9"^^xsd:float ;
+                :hasEnergy "14.0"^^xsd:float ;
+                :hasFat "0.1"^^xsd:float ;
+                :hasFibre "1.3"^^xsd:float ;
+                :hasPotassium "56.0"^^xsd:float ;
+                :hasProtein "1.4"^^xsd:float ;
+                :hasServingSizeUnit "1.0"^^xsd:float ;
+                :hasSodium "1.0"^^xsd:float ;
+                rdfs:isDefinedBy "FCD"^^xsd:string ;
+                rdfs:label "Kacang Botor @my"^^xsd:string ,
+                           """Winged Bean @en
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FreeFoods
+:FreeFoods rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#FrenchBeans
+:FrenchBeans rdf:type owl:NamedIndividual ,
+                      :LegumeVegetables ;
+             :hasFoodStatus :Cooked ;
+             :hasMealTimeSuggest :Lunch ;
+             :hasServingSize :CupHalfInchPieces ;
+             :hasCHO "6.97"^^xsd:float ;
+             :hasEnergy "31.0"^^xsd:float ;
+             :hasFat "0.22"^^xsd:float ;
+             :hasFibre "2.7"^^xsd:float ;
+             :hasPotassium "211.0"^^xsd:float ;
+             :hasProtein "1.83"^^xsd:float ;
+             :hasServingSizeUnit "1.0"^^xsd:float ;
+             :hasSodium "6.0"^^xsd:float ;
+             rdfs:comment """Kacang Buncis @my
+string bean @en
+snap bean @us"""^^xsd:string ;
+             rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#GranulatedBrownSweeteners
+:GranulatedBrownSweeteners rdf:type owl:NamedIndividual ,
+                                    :LowCHOFoods ;
+                           :hasServingSize :Teaspoon ;
+                           :hasCHO "0.42"^^xsd:float ;
+                           :hasEnergy "2.0"^^xsd:float ;
+                           :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#GrilledChickenRice
+:GrilledChickenRice rdf:type owl:NamedIndividual ,
+                             :CerealBasedDishes ;
+                    :hasMainIngsFirst :BrownRice ;
+                    :hasMainIngsFourth :ChickenBreast ;
+                    :hasMainIngsSecond :Tomato ;
+                    :hasMainIngsThird :Cucumber ;
+                    :hasRaceSuggest :Chinese ,
+                                    :Malay ;
+                    :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                    :hasMainIngsFourthPortion "0.5"^^xsd:float ;
+                    :hasMainIngsSecondPortion "0.25"^^xsd:float ;
+                    :hasMainIngsThirdPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#GrilledFish
+:GrilledFish rdf:type owl:NamedIndividual ,
+                      :SeafoodDishes ;
+             :hasMainIngsFirst :HardtailScad ;
+             :hasMainIngsSecond :PalmOil ;
+             :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+             :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+             rdfs:comment "Cencaru Bakar"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Grouper
+:Grouper rdf:type owl:NamedIndividual ,
+                  :Saltwater ;
+         :hasAllergic :Fishes ;
+         :hasMealTimeSuggest :Dinner ,
+                             :Lunch ;
+         :hasServingSize :WholeMedium ;
+         :hasCHO "0.2"^^xsd:float ;
+         :hasEnergy "33.5"^^xsd:float ;
+         :hasFat "0.2"^^xsd:float ;
+         :hasProtein "7.8"^^xsd:float ;
+         :hasServingSizeUnit "0.5"^^xsd:float ;
+         :hasSodium "46.0"^^xsd:float ;
+         rdfs:comment "Ikan kerapu"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Guava
+:Guava rdf:type owl:NamedIndividual ,
+                :FifteenSeedFruit ;
+       :hasDiseaseSuggest :Diabetes ;
+       :hasMealTimeSuggest :AfternoonSnack ,
+                           :Breakfast ,
+                           :MorningSnack ;
+       :hasServingSize :LargeWithoutSeeds ;
+       :hasCHO "11.1"^^xsd:float ;
+       :hasEnergy "51.0"^^xsd:float ;
+       :hasFibre "7.5"^^xsd:float ;
+       :hasServingSizeUnit "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Halves
+:Halves rdf:type owl:NamedIndividual ,
+                 :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#HardtailScad
+:HardtailScad rdf:type owl:NamedIndividual ,
+                       :Saltwater ;
+              :hasAllergic :Fishes ;
+              :hasDiseaseSuggest :Diabetes ;
+              :hasServingSize :WholeMedium ;
+              :hasEnergy "37.67"^^xsd:float ;
+              :hasFat "0.47"^^xsd:float ;
+              :hasProtein "7.6"^^xsd:float ;
+              :hasServingSizeUnit "0.33"^^xsd:float ;
+              rdfs:comment "Cencaru @my"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Hazelnut
+:Hazelnut rdf:type owl:NamedIndividual ,
+                   :Nuts ;
+          :hasAllergic :Peanut ,
+                       :TreeNut ;
+          :hasDiseaseSuggest :Diabetes ;
+          :hasFoodStatus :Cooked ;
+          :hasMealTimeSuggest :AfternoonSnack ,
+                              :Breakfast ,
+                              :MorningSnack ;
+          :hasServingSize :Nuts ;
+          :hasEnergy "45.0"^^xsd:float ;
+          :hasFat "4.4"^^xsd:float ;
+          :hasMUFA "3.3"^^xsd:float ;
+          :hasPUFA "0.6"^^xsd:float ;
+          :hasSaturatedFat "0.3"^^xsd:float ;
+          :hasServingSizeUnit "5.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#HeapedDessertSpoon
+:HeapedDessertSpoon rdf:type owl:NamedIndividual ,
+                             :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#HeapedTablespoon
+:HeapedTablespoon rdf:type owl:NamedIndividual ,
+                           :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Hindu
+:Hindu rdf:type owl:NamedIndividual ,
+                :Religion .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Hyperlipid
+:Hyperlipid rdf:type owl:NamedIndividual ,
+                     :Disease .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Hypertension
+:Hypertension rdf:type owl:NamedIndividual ,
+                       :Disease .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Indian
+:Indian rdf:type owl:NamedIndividual ,
+                 :Race .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#IndianPennywort
+:IndianPennywort rdf:type owl:NamedIndividual ,
+                          :LeafyVegetables ;
+                 :hasMealTimeSuggest :Dinner ,
+                                     :Lunch ;
+                 :hasRaceSuggest :Malay ;
+                 :hasServingSize :CupChopped ;
+                 :hasCHO "2.8"^^xsd:float ;
+                 :hasEnergy "16.0"^^xsd:float ;
+                 :hasFibre "0.6"^^xsd:float ;
+                 :hasPotassium "166.0"^^xsd:float ;
+                 :hasProtein "0.8"^^xsd:float ;
+                 :hasServingSizeUnit "1.0"^^xsd:float ;
+                 :hasSodium "8.0"^^xsd:float ;
+                 rdfs:comment "FCD"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Islam
+:Islam rdf:type owl:NamedIndividual ,
+                :Religion .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Jam
+:Jam rdf:type owl:NamedIndividual ,
+              :LowCHOFoods ;
+     :hasFoodStatus :Light ,
+                    :SugarFree ;
+     :hasServingSize :Teaspoon .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Ketchup
+:Ketchup rdf:type owl:NamedIndividual ,
+                  :Condiments ;
+         :hasServingSize :Tablespoon ;
+         :hasCHO "4.66"^^xsd:float ;
+         :hasEnergy "17.0"^^xsd:float ;
+         :hasServingSizeUnit "1.0"^^xsd:float ;
+         :hasSodium "154.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#KidneyBeans
+:KidneyBeans rdf:type owl:NamedIndividual ,
+                      :Beans ;
+             :hasDiseaseSuggest :Diabetes ;
+             :hasFoodStatus :Boiled ;
+             :hasMealTimeSuggest :AfternoonSnack ,
+                                 :MorningSnack ;
+             :hasServingSize :Cup ;
+             :hasCHO "20.18"^^xsd:float ;
+             :hasEnergy "112.0"^^xsd:float ;
+             :hasFat "0.44"^^xsd:float ;
+             :hasFibre "5.7"^^xsd:float ;
+             :hasProtein "7.67"^^xsd:float ;
+             :hasServingSizeUnit "0.5"^^xsd:float ;
+             rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#KidneyBeansPorridge
+:KidneyBeansPorridge rdf:type owl:NamedIndividual ,
+                              :PlantBasedDishes ;
+                     :hasMainIngsFirst :KidneyBeans ;
+                     :hasMainIngsSecond :SkimMilk ;
+                     :hasSeasonings :GranulatedBrownSweeteners ;
+                     :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                     :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                     :hasSeasoningPortion "3.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#KingSalad
+:KingSalad rdf:type owl:NamedIndividual ,
+                    :LeafyVegetables ;
+           :hasMealTimeSuggest :Dinner ,
+                               :Lunch ;
+           :hasRaceSuggest :Malay ;
+           :hasCHO "0.2"^^xsd:float ;
+           :hasEnergy "6.0"^^xsd:float ;
+           :hasFat "0.2"^^xsd:float ;
+           :hasFibre "0.6"^^xsd:float ;
+           :hasPotassium "144.0"^^xsd:float ;
+           :hasProtein "1.0"^^xsd:float ;
+           :hasSodium "1.0"^^xsd:float ;
+           rdfs:comment """Ulam Raja @my
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Kiwi
+:Kiwi rdf:type owl:NamedIndividual ,
+               :SubTropicalFruits ;
+      :hasMealTimeSuggest :AfternoonSnack ,
+                          :Breakfast ,
+                          :MorningSnack ;
+      :hasServingSize :Whole ;
+      :hasCHO "13.3"^^xsd:float ;
+      :hasEnergy "56.0"^^xsd:float ;
+      :hasFibre "2.7"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LadysFinger
+:LadysFinger rdf:type owl:NamedIndividual ,
+                      :FruitVegetables ;
+             :hasFoodStatus :Boiled ;
+             :hasMealTimeSuggest :Dinner ,
+                                 :Lunch ;
+             :hasServingSize :CupSlices ;
+             :hasCHO "3.61"^^xsd:float ;
+             :hasEnergy "18.0"^^xsd:float ;
+             :hasFat "0.17"^^xsd:float ;
+             :hasFibre "2.0"^^xsd:float ;
+             :hasPotassium "108.0"^^xsd:float ;
+             :hasProtein "1.5"^^xsd:float ;
+             :hasServingSizeUnit "0.5"^^xsd:float ;
+             :hasSodium "5.0"^^xsd:float ;
+             rdfs:comment "Bendi @my"^^xsd:string ,
+                          "Okra @en"^^xsd:string ;
+             rdfs:isDefinedBy """USDA
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LambCurry
+:LambCurry rdf:type owl:NamedIndividual ,
+                    :MeatDishes ;
+           :hasMainIngsFirst :LambLoin ;
+           :hasMainIngsSecond :CornOil ;
+           :hasSecondIngsFirst :Tomato ;
+           :hasSecondIngsSecond :Carrot ;
+           :hasSecondIngsThird :Potato ;
+           :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+           :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+           :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+           :hasSecondIngsSecondPortion "0.5"^^xsd:float ;
+           :hasSecondIngsThirdPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LambLoin
+:LambLoin rdf:type owl:NamedIndividual ,
+                   :Lamb ;
+          :hasExchange :Meat ;
+          :hasFoodStatus :Boiled ;
+          :hasMealTimeSuggest :Dinner ,
+                              :Lunch ;
+          :hasServingSize :Matchbox ;
+          :hasCholesterol "27.0"^^xsd:float ;
+          :hasEnergy "61.0"^^xsd:float ;
+          :hasFat "2.8"^^xsd:float ;
+          :hasProtein "8.5"^^xsd:float ;
+          :hasSaturatedFat "1.0"^^xsd:float ;
+          :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LambSoup
+:LambSoup rdf:type owl:NamedIndividual ,
+                   :MeatDishes ;
+          :hasMainIngsFirst :LambLoin ;
+          :hasSecondIngsFirst :Carrot ;
+          :hasSecondIngsSecond :Potato ;
+          :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+          :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+          :hasSecondIngsSecondPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LambSpicySour
+:LambSpicySour rdf:type owl:NamedIndividual ,
+                        :MeatDishes ;
+               :hasMainIngsFirst :LambLoin ;
+               :hasMainIngsSecond :CornOil ;
+               :hasSecondIngsFirst :Tomato ;
+               :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+               :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+               :hasSecondIngsFirstPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Large
+:Large rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LargeWithoutSeeds
+:LargeWithoutSeeds rdf:type owl:NamedIndividual ,
+                            :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Light
+:Light rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Local
+:Local rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LongBean
+:LongBean rdf:type owl:NamedIndividual ,
+                   :LegumeVegetables ;
+          :hasMealTimeSuggest :Lunch ;
+          :hasServingSize :CupDiced ;
+          :hasCHO "4.7"^^xsd:float ;
+          :hasEnergy "39.0"^^xsd:float ;
+          :hasFat "1.1"^^xsd:float ;
+          :hasFibre "1.7"^^xsd:float ;
+          :hasPotassium "62.0"^^xsd:float ;
+          :hasProtein "2.5"^^xsd:float ;
+          :hasSodium "6.0"^^xsd:float ;
+          rdfs:comment """Kacang Panjang @my
+yardlong beans @en
+"""^^xsd:string ;
+          rdfs:isDefinedBy """FCD
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LongMelon
+:LongMelon rdf:type owl:NamedIndividual ,
+                    :FruitVegetables ;
+           :hasFoodStatus :Cooked ;
+           :hasMealTimeSuggest :Lunch ;
+           :hasServingSize :Cup ;
+           :hasCHO "2.69"^^xsd:float ;
+           :hasEnergy "11.0"^^xsd:float ;
+           :hasFibre "0.9"^^xsd:float ;
+           :hasProtein "0.44"^^xsd:float ;
+           :hasServingSizeUnit "0.5"^^xsd:float ;
+           rdfs:comment """Labu Air @my
+bottle gourd @en
+calabash @en
+"""^^xsd:string ;
+           rdfs:isDefinedBy """USDA
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LowFatPlainYogurt
+:LowFatPlainYogurt rdf:type owl:NamedIndividual ,
+                            :LowFatMilks ;
+                   :hasAllergic :CowMilk .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LowSaltHiFibreBiscuit
+:LowSaltHiFibreBiscuit rdf:type owl:NamedIndividual ,
+                                :Crackers ;
+                       :hasMealTimeSuggest :AfternoonSnack ,
+                                           :MorningSnack ;
+                       :hasServedWith :PeanutButter ;
+                       :hasServingSize :Piece ;
+                       :hasCHO "16.0"^^xsd:float ;
+                       :hasEnergy "108.0"^^xsd:float ;
+                       :hasFat "4.2"^^xsd:float ;
+                       :hasFibre "1.7"^^xsd:float ;
+                       :hasServingSizeUnit "3.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#LowerFatMargarine
+:LowerFatMargarine rdf:type owl:NamedIndividual ,
+                            :Spread ;
+                   :IsServedWith :WholeMealBread ;
+                   :hasMealTimeSuggest :Breakfast ;
+                   :hasServingSize :DessertSpoon ;
+                   :hasEnergy "50.0"^^xsd:float ;
+                   :hasFat "5.4"^^xsd:float ;
+                   :hasMUFA "2.6"^^xsd:float ;
+                   :hasPUFA "1.4"^^xsd:float ;
+                   :hasSaturatedFat "1.4"^^xsd:float ;
+                   :hasServingSizeUnit "2.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Lunch
+:Lunch rdf:type owl:NamedIndividual ,
+                :MealTime .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Malay
+:Malay rdf:type owl:NamedIndividual ,
+                :Race .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Matchbox
+:Matchbox rdf:type owl:NamedIndividual ,
+                   :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Meat
+:Meat rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#MorningSnack
+:MorningSnack rdf:type owl:NamedIndividual ,
+                       :MealTime .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#MungBeanSprouts
+:MungBeanSprouts rdf:type owl:NamedIndividual ,
+                          :LegumeVegetables ;
+                 :hasFoodStatus :Cooked ;
+                 :hasMealTimeSuggest :Dinner ,
+                                     :Lunch ;
+                 :hasServingSize :Cup ;
+                 :hasCHO "2.6"^^xsd:float ;
+                 :hasEnergy "13.0"^^xsd:float ;
+                 :hasFibre "0.5"^^xsd:float ;
+                 :hasProtein "1.26"^^xsd:float ;
+                 :hasServingSizeUnit "0.5"^^xsd:float ;
+                 rdfs:comment """Taugeh @my
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#MungBeans
+:MungBeans rdf:type owl:NamedIndividual ,
+                    :Beans ;
+           :hasDiseaseSuggest :Diabetes ;
+           :hasFoodStatus :Boiled ;
+           :hasMealTimeSuggest :AfternoonSnack ,
+                               :MorningSnack ;
+           :hasRaceSuggest :Malay ;
+           :hasServingSize :Cup ;
+           :hasCHO "19.34"^^xsd:float ;
+           :hasEnergy "106.0"^^xsd:float ;
+           :hasFat "0.38"^^xsd:float ;
+           :hasFibre "7.7"^^xsd:float ;
+           :hasProtein "7.09"^^xsd:float ;
+           :hasServingSizeUnit "0.5"^^xsd:float ;
+           rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#MungBeansPorridge
+:MungBeansPorridge rdf:type owl:NamedIndividual ,
+                            :PlantBasedDishes ;
+                   :hasMainIngsFirst :MungBeans ;
+                   :hasMainIngsSecond :SkimMilk ;
+                   :hasSeasonings :GranulatedBrownSweeteners ;
+                   :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                   :hasMainIngsSecondPortion "1.0"^^xsd:float ;
+                   :hasSeasoningPortion "3.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Mussel
+:Mussel rdf:type owl:NamedIndividual ,
+                 :Mollusc ;
+        :hasAllergic :ShellFish ;
+        :hasFoodStatus :Boiled ;
+        :hasMealTimeSuggest :Dinner ,
+                            :Lunch ;
+        :hasServingSize :WholeMedium ;
+        :hasCHO "0.8"^^xsd:float ;
+        :hasCholesterol "280.0"^^xsd:float ;
+        :hasEnergy "44.0"^^xsd:float ;
+        :hasFat "1.2"^^xsd:float ;
+        :hasPotassium "48.0"^^xsd:float ;
+        :hasProtein "7.2"^^xsd:float ;
+        :hasServingSizeUnit "20.0"^^xsd:float ;
+        :hasSodium "176.0"^^xsd:float ;
+        rdfs:comment """Kupang @my
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#MustardGreen
+:MustardGreen rdf:type owl:NamedIndividual ,
+                       :LeafyVegetables ;
+              :hasDiseaseSuggest :Diabetes ;
+              :hasFoodStatus :Cooked ;
+              :hasMealTimeSuggest :Dinner ,
+                                  :Lunch ;
+              :hasServingSize :CupChopped ;
+              :hasCHO "3.16"^^xsd:float ;
+              :hasEnergy "18.0"^^xsd:float ;
+              :hasFibre "1.4"^^xsd:float ;
+              :hasProtein "1.79"^^xsd:float ;
+              :hasServingSizeUnit "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#NonFatPlainYogurt
+:NonFatPlainYogurt rdf:type owl:NamedIndividual ,
+                            :LowFatMilks ;
+                   :hasAllergic :CowMilk .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Nuts
+:Nuts rdf:type owl:NamedIndividual ,
+               :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Oatmeal
+:Oatmeal rdf:type owl:NamedIndividual ,
+                  :CerealGrains ;
+         :hasCompanion :Almonds ,
+                       :ChiaSeeds ,
+                       :DriedApricot ,
+                       :Flaxseed ,
+                       :PumpkinSeeds ,
+                       :Raisins ,
+                       :SesameSeeds ,
+                       :SunflowerSeeds ,
+                       :Walnuts ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasMealTimeSuggest :Breakfast ;
+         :hasServedWith :SkimMilk ;
+         :hasServingSize :Tablespoon ;
+         :hasCHO "13.72"^^xsd:float ;
+         :hasEnergy "77.0"^^xsd:float ;
+         :hasFat "1.32"^^xsd:float ;
+         :hasFibre "2.0"^^xsd:float ;
+         :hasServingSizeUnit "4.0"^^xsd:float ;
+         rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Orange
+:Orange rdf:type owl:NamedIndividual ,
+                 :CitrusFruits ;
+        :hasDiseaseSuggest :Diabetes ;
+        :hasMealTimeSuggest :AfternoonSnack ,
+                            :Breakfast ,
+                            :MorningSnack ;
+        :hasServingSize :Whole ;
+        :hasCHO "15.4"^^xsd:float ;
+        :hasEnergy "62.0"^^xsd:float ;
+        :hasFibre "3.1"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Ounce
+:Ounce rdf:type owl:NamedIndividual ,
+                :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PalmOil
+:PalmOil rdf:type owl:NamedIndividual ,
+                  :Oil ;
+         :hasRaceSuggest :Chinese ,
+                         :Indian ,
+                         :Malay ;
+         :hasServingSize :Teaspoon ;
+         :hasEnergy "40.0"^^xsd:float ;
+         :hasFat "4.5"^^xsd:float ;
+         :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PandanLeaves
+:PandanLeaves rdf:type owl:NamedIndividual ,
+                       :LowCHOFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Papaya
+:Papaya rdf:type owl:NamedIndividual ,
+                 :FifteenSeedFruit ;
+        :hasMealTimeSuggest :AfternoonSnack ,
+                            :Breakfast ,
+                            :MorningSnack ;
+        :hasServingSize :CupCubesOneInch ;
+        :hasCHO "15.69"^^xsd:float ;
+        :hasEnergy "62.0"^^xsd:float ;
+        :hasFibre "2.5"^^xsd:float ;
+        :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PaprikRice
+:PaprikRice rdf:type owl:NamedIndividual ,
+                     :CerealBasedDishes ;
+            :hasMainIngsFifth :CornOil ;
+            :hasMainIngsFirst :BrownRice ;
+            :hasMainIngsFourth :ChickenBreast ;
+            :hasMainIngsSecond :Carrot ;
+            :hasMainIngsThird :Cauliflower ;
+            :hasRaceSuggest :Malay ;
+            :hasMainIngsFifthPortion "0.5"^^xsd:float ;
+            :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+            :hasMainIngsFourthPortion "0.5"^^xsd:float ;
+            :hasMainIngsSecondPortion "0.25"^^xsd:float ;
+            :hasMainIngsThirdPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Peanut
+:Peanut rdf:type owl:NamedIndividual ,
+                 :AllergyFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PeanutButter
+:PeanutButter rdf:type owl:NamedIndividual ,
+                       :NutButters ;
+              :IsServedWith :WholeMealBread ;
+              :hasAllergic :Peanut ,
+                           :TreeNut ;
+              :hasDiseaseSuggest :Diabetes ;
+              :hasMealTimeSuggest :Breakfast ;
+              :hasServingSize :Tablespoon ;
+              :hasEnergy "48.0"^^xsd:float ;
+              :hasFat "4.11"^^xsd:float ;
+              :hasMUFA "2.0"^^xsd:float ;
+              :hasPUFA "1.2"^^xsd:float ;
+              :hasSaturatedFat "0.83"^^xsd:float ;
+              :hasServingSizeUnit "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Peanuts
+:Peanuts rdf:type owl:NamedIndividual ,
+                  :Nuts ;
+         :hasAllergic :Peanut ,
+                      :TreeNut ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasFoodStatus :Cooked ;
+         :hasMealTimeSuggest :AfternoonSnack ,
+                             :Breakfast ,
+                             :MorningSnack ;
+         :hasServingSize :Nuts ;
+         :hasEnergy "58.0"^^xsd:float ;
+         :hasFat "5.0"^^xsd:float ;
+         :hasMUFA "2.5"^^xsd:float ;
+         :hasPUFA "1.6"^^xsd:float ;
+         :hasSaturatedFat "0.7"^^xsd:float ;
+         :hasServingSizeUnit "10.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Pear
+:Pear rdf:type owl:NamedIndividual ,
+               :MalaceousFruits ;
+      :hasDiseaseSuggest :Diabetes ;
+      :hasMealTimeSuggest :AfternoonSnack ,
+                          :Breakfast ,
+                          :Diabetes ,
+                          :MorningSnack ;
+      :hasServingSize :Large ;
+      :hasCHO "16.2"^^xsd:float ;
+      :hasEnergy "61.0"^^xsd:float ;
+      :hasFibre "3.2"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Piece
+:Piece rdf:type owl:NamedIndividual ,
+                :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PigeonPeas
+:PigeonPeas rdf:type owl:NamedIndividual ,
+                     :Beans ;
+            :hasDiseaseSuggest :Diabetes ;
+            :hasFoodStatus :Boiled ;
+            :hasMealTimeSuggest :MorningSnack ;
+            :hasServingSize :Cup ;
+            :hasCHO "21.45"^^xsd:float ;
+            :hasEnergy "117.0"^^xsd:float ;
+            :hasFat "0.51"^^xsd:float ;
+            :hasFibre "5.1"^^xsd:float ;
+            :hasPotassium "476.0"^^xsd:float ;
+            :hasProtein "7.41"^^xsd:float ;
+            :hasServingSizeUnit "0.5"^^xsd:float ;
+            :hasSodium "6.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PigeonPeasPorridge
+:PigeonPeasPorridge rdf:type owl:NamedIndividual ,
+                             :PlantBasedDishes ;
+                    :hasMainIngsFirst :PigeonPeas ;
+                    :hasMainIngsSecond :SkimMilk ;
+                    :hasSeasonings :GranulatedBrownSweeteners ;
+                    :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                    :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                    :hasSeasoningPortion "3.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Pineapple
+:Pineapple rdf:type owl:NamedIndividual ,
+                    :SegmentedFruits ;
+           :hasMealTimeSuggest :AfternoonSnack ,
+                               :Breakfast ,
+                               :MorningSnack ;
+           :hasServingSize :CupChunks ;
+           :hasCHO "16.24"^^xsd:float ;
+           :hasEnergy "62.0"^^xsd:float ;
+           :hasFat "0.15"^^xsd:float ;
+           :hasFibre "1.7"^^xsd:float ;
+           :hasPotassium "135.0"^^xsd:float ;
+           :hasProtein "0.67"^^xsd:float ;
+           :hasServingSizeUnit "0.75"^^xsd:float ;
+           :hasSodium "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PinkPrawn
+:PinkPrawn rdf:type owl:NamedIndividual ,
+                    :Crustacean ;
+           :hasAllergic :ShellFish ;
+           :hasExchange :Vegetables ;
+           :hasMealTimeSuggest :Dinner ,
+                               :Lunch ;
+           :hasServingSize :WholeMedium ;
+           :hasCHO "0.36"^^xsd:float ;
+           :hasCholesterol "68.0"^^xsd:float ;
+           :hasEnergy "28.8"^^xsd:float ;
+           :hasFat "0.12"^^xsd:float ;
+           :hasPotassium "72.0"^^xsd:float ;
+           :hasProtein "6.72"^^xsd:float ;
+           :hasServingSizeUnit "6.0"^^xsd:float ;
+           :hasSodium "40.8"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Pistachios
+:Pistachios rdf:type owl:NamedIndividual ,
+                     :Nuts ;
+            :hasAllergic :Peanut ,
+                         :TreeNut ;
+            :hasDiseaseSuggest :Diabetes ;
+            :hasFoodStatus :Cooked ;
+            :hasMealTimeSuggest :AfternoonSnack ,
+                                :Breakfast ,
+                                :MorningSnack ;
+            :hasServingSize :Nuts ;
+            :hasEnergy "64.0"^^xsd:float ;
+            :hasFat "5.1"^^xsd:float ;
+            :hasMUFA "2.7"^^xsd:float ;
+            :hasPUFA "1.6"^^xsd:float ;
+            :hasSaturatedFat "0.6"^^xsd:float ;
+            :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Potato
+:Potato rdf:type owl:NamedIndividual ,
+                 :StarchyVegetables ;
+        :hasFoodStatus :Cooked ;
+        :hasMealTimeSuggest :AfternoonSnack ,
+                            :Lunch ,
+                            :MorningSnack ;
+        :hasServingSize :Cup ;
+        :hasCHO "17.0"^^xsd:float ;
+        :hasEnergy "73.0"^^xsd:float ;
+        :hasFat "0.1"^^xsd:float ;
+        :hasFibre "1.5"^^xsd:float ;
+        :hasServingSizeUnit "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Prawn
+:Prawn rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Pumpkin
+:Pumpkin rdf:type owl:NamedIndividual ,
+                  :StarchyVegetables ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasMealTimeSuggest :AfternoonSnack ,
+                             :Lunch ,
+                             :MorningSnack ;
+         :hasRaceSuggest :Malay ;
+         :hasServingSize :CupCubesOneInch ;
+         :hasCHO "7.54"^^xsd:float ;
+         :hasEnergy "30.0"^^xsd:float ;
+         :hasFat "0.12"^^xsd:float ;
+         :hasFibre "0.6"^^xsd:float ;
+         :hasPotassium "394.0"^^xsd:float ;
+         :hasProtein "1.16"^^xsd:float ;
+         :hasServingSizeUnit "1.0"^^xsd:float ;
+         :hasSodium "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#PumpkinSeeds
+:PumpkinSeeds rdf:type owl:NamedIndividual ,
+                       :Seeds ;
+              :hasDiseaseSuggest :Diabetes ;
+              :hasMealTimeSuggest :Breakfast ;
+              :hasServingSize :Tablespoon ;
+              :hasEnergy "73.0"^^xsd:float ;
+              :hasFat "5.9"^^xsd:float ;
+              :hasMUFA "1.8"^^xsd:float ;
+              :hasPUFA "2.7"^^xsd:float ;
+              :hasSaturatedFat "1.1"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Raisins
+:Raisins rdf:type owl:NamedIndividual ,
+                  :DriedFruits ;
+         :hasMealTimeSuggest :AfternoonSnack ,
+                             :Breakfast ,
+                             :MorningSnack ;
+         :hasServingSize :Tablespoon ;
+         :hasCHO "16.33"^^xsd:float ;
+         :hasEnergy "62.0"^^xsd:float ;
+         :hasFibre "0.8"^^xsd:float ;
+         :hasServingSizeUnit "2.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#RedGram
+:RedGram rdf:type owl:NamedIndividual ;
+         :hasMealTimeSuggest :AfternoonSnack ,
+                             :Breakfast ,
+                             :MorningSnack ;
+         :hasRaceSuggest :Malay ;
+         :hasServingSize :Cup .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#RedSnapper
+:RedSnapper rdf:type owl:NamedIndividual ,
+                     :Saltwater ;
+            :hasAllergic :Fishes ;
+            :hasDiseaseSuggest :Diabetes ;
+            :hasMealTimeSuggest :Dinner ,
+                                :Lunch ;
+            :hasServingSize :Piece ;
+            :hasEnergy "53.0"^^xsd:float ;
+            :hasFat "1.2"^^xsd:float ,
+                    "42.7"^^xsd:float ;
+            :hasProtein "10.4"^^xsd:float ;
+            :hasServingSizeUnit "0.33"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#RegularTofu
+:RegularTofu rdf:type owl:NamedIndividual ,
+                      :SoyaBeansProducts ;
+             :hasAllergic :Soya ;
+             :hasDiseaseSuggest :Diabetes ;
+             :hasMealTimeSuggest :AfternoonSnack ,
+                                 :MorningSnack ;
+             :hasRaceSuggest :Chinese ;
+             :hasServingSize :Cup ;
+             :hasEnergy "63.0"^^xsd:float ;
+             :hasFat "3.95"^^xsd:float ;
+             :hasFibre "0.2"^^xsd:float ;
+             :hasProtein "6.68"^^xsd:float ;
+             :hasServingSizeUnit "0.33"^^xsd:float ;
+             rdfs:comment "Tau-kua @cn"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#RiceNoodle
+:RiceNoodle rdf:type owl:NamedIndividual ,
+                     :RiceAndRiceProducts ;
+            :hasFoodStatus :Cooked ;
+            :hasMealTimeSuggest :Breakfast ,
+                                :Dinner ;
+            :hasServingSize :Cup ;
+            :hasCHO "14.09"^^xsd:float ;
+            :hasEnergy "63.0"^^xsd:float ;
+            :hasFat "0.12"^^xsd:float ;
+            :hasFibre "0.6"^^xsd:float ;
+            :hasProtein "1.05"^^xsd:float ;
+            :hasServingSizeUnit "0.33"^^xsd:float ;
+            :hasSodium "11.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Sardine
+:Sardine rdf:type owl:NamedIndividual ,
+                  :Saltwater ;
+         :hasAllergic :Fishes ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasFoodStatus :Canned ;
+         :hasMealTimeSuggest :Breakfast ,
+                             :Lunch ;
+         :hasServingSize :WholeMedium ;
+         :hasCholesterol "34.0"^^xsd:float ;
+         :hasEnergy "50.0"^^xsd:float ;
+         :hasFat "2.7"^^xsd:float ;
+         :hasProtein "5.9"^^xsd:float ;
+         :hasSaturatedFat "0.4"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Seafood
+:Seafood rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SesameSeeds
+:SesameSeeds rdf:type owl:NamedIndividual ,
+                      :Seeds ;
+             :hasDiseaseSuggest :Diabetes ;
+             :hasMealTimeSuggest :Breakfast ;
+             :hasServingSize :Tablespoon ;
+             :hasEnergy "52.0"^^xsd:float ;
+             :hasFat "4.5"^^xsd:float ;
+             :hasMUFA "1.7"^^xsd:float ;
+             :hasPUFA "2.0"^^xsd:float ;
+             :hasSaturatedFat "0.6"^^xsd:float ;
+             :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#ShellFish
+:ShellFish rdf:type owl:NamedIndividual ,
+                    :AllergyFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SkimMilk
+:SkimMilk rdf:type owl:NamedIndividual ,
+                   :LowFatMilks ;
+          :hasAllergic :CowMilk ;
+          :hasDiseaseSuggest :Diabetes ;
+          :hasMealTimeSuggest :AfternoonSnack ,
+                              :Breakfast ,
+                              :MorningSnack ;
+          :hasServingSize :HeapedTablespoon ;
+          :hasServingSizeFree :HeapedTablespoon ;
+          :hasCHO "13.5"^^xsd:float ;
+          :hasCholesterol "6.35"^^xsd:float ;
+          :hasEnergy "91.0"^^xsd:float ;
+          :hasFat "0.8"^^xsd:float ;
+          :hasProtein "8.35"^^xsd:float ;
+          :hasServingSizeUnit "4.0"^^xsd:float ;
+          :hasSodium "97.5"^^xsd:float ;
+          rdfs:isDefinedBy """sunlac
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Slice
+:Slice rdf:type owl:NamedIndividual ,
+                :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SmallSixInchAcross
+:SmallSixInchAcross rdf:type owl:NamedIndividual ,
+                             :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Snail
+:Snail rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SnowPea
+:SnowPea rdf:type owl:NamedIndividual ,
+                  :LegumeVegetables ;
+         :hasMealTimeSuggest :Lunch ;
+         :hasServingSize :Cup ;
+         :hasCHO "4.76"^^xsd:float ;
+         :hasEnergy "26.0"^^xsd:float ;
+         :hasFat "0.13"^^xsd:float ;
+         :hasFibre "1.6"^^xsd:float ;
+         :hasPotassium "126.0"^^xsd:float ;
+         :hasProtein "1.76"^^xsd:float ;
+         :hasSodium "3.0"^^xsd:float ;
+         rdfs:comment """Kacang Pea @my
+snap pea @en"""^^xsd:string ;
+         rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SotoRiceNoodle
+:SotoRiceNoodle rdf:type owl:NamedIndividual ,
+                         :CerealBasedDishes ;
+                :hasMainIngsFirst :RiceNoodle ;
+                :hasMainIngsFourth :ChickenBreast ;
+                :hasMainIngsSecond :MungBeanSprouts ;
+                :hasMainIngsThird :Cabbage ;
+                :hasRaceSuggest :Malay ;
+                :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                :hasMainIngsFourthPortion "0.5"^^xsd:float ;
+                :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                :hasMainIngsThirdPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SoupRiceNoodle
+:SoupRiceNoodle rdf:type owl:NamedIndividual ,
+                         :CerealBasedDishes ;
+                :hasMainIngsFifth :CornOil ;
+                :hasMainIngsFirst :RiceNoodle ;
+                :hasMainIngsFourth :ChickenBreast ;
+                :hasMainIngsSecond :MustardGreen ;
+                :hasMainIngsSeventh :BabyCorn ;
+                :hasMainIngsSixth :Cabbage ;
+                :hasMainIngsThird :Carrot ;
+                :hasRaceSuggest :Chinese ;
+                :hasSecondIngsFirst :EggWhite ;
+                :hasMainIngsFifthPortion "0.5"^^xsd:float ;
+                :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                :hasMainIngsFourthPortion "0.5"^^xsd:float ;
+                :hasMainIngsSecondPortion "0.25"^^xsd:float ;
+                :hasMainIngsSeventhPortion "0.25"^^xsd:float ;
+                :hasMainIngsSixthPortion "0.25"^^xsd:float ;
+                :hasMainIngsThirdPortion "0.25"^^xsd:float ;
+                :hasSecondIngsFirstPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SourStewFish
+:SourStewFish rdf:type owl:NamedIndividual ,
+                       :SeafoodDishes ;
+              :hasMainIngsFirst :YellowBandedTrevally ;
+              :hasRaceSuggest :Malay ;
+              :hasSecondIngsFirst :Pineapple ;
+              :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+              :hasSecondIngsFirstPortion "0.25"^^xsd:float ;
+              rdfs:comment "Asam rebus Ikan Selar"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Soya
+:Soya rdf:type owl:NamedIndividual ,
+               :AllergyFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SoyaBeanCurdInSyrup
+:SoyaBeanCurdInSyrup rdf:type owl:NamedIndividual ,
+                              :PlantBasedDishes ;
+                     :hasMainIngsFirst :SoyaBeans ;
+                     :hasSeasonings :GranulatedBrownSweeteners ;
+                     :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                     :hasSeasoningPortion "3.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SoyaBeans
+:SoyaBeans rdf:type owl:NamedIndividual ,
+                    :SoyaBeansProducts ;
+           :hasAllergic :Soya ;
+           :hasDiseaseSuggest :Diabetes ;
+           :hasEdible :False ;
+           :hasMealTimeSuggest :AfternoonSnack ,
+                               :MorningSnack ;
+           :hasRaceSuggest :Chinese ;
+           :hasServingSize :Cup ;
+           :hasCHO "9.35"^^xsd:float ;
+           :hasEnergy "138.0"^^xsd:float ;
+           :hasFat "6.18"^^xsd:float ;
+           :hasFibre "2.9"^^xsd:float ;
+           :hasPotassium "557.0"^^xsd:float ;
+           :hasProtein "11.31"^^xsd:float ;
+           :hasServingSizeUnit "0.17"^^xsd:float ;
+           :hasSodium "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SoyaMilk
+:SoyaMilk rdf:type owl:NamedIndividual ,
+                   :DairyLikeFoods ;
+          :hasAllergic :Soya ;
+          :hasFoodStatus :Light ;
+          :hasServingSize :Cup .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SpanishMackerel
+:SpanishMackerel rdf:type owl:NamedIndividual ,
+                          :Saltwater ;
+                 :hasAllergic :Fishes ;
+                 :hasDiseaseSuggest :Diabetes ;
+                 :hasMealTimeSuggest :Dinner ,
+                                     :Lunch ;
+                 :hasServingSize :Piece ;
+                 :hasCholesterol "31.4"^^xsd:float ;
+                 :hasEnergy "45.0"^^xsd:float ;
+                 :hasFat "0.9"^^xsd:float ;
+                 :hasProtein "8.6"^^xsd:float ;
+                 :hasServingSizeUnit "0.25"^^xsd:float ;
+                 rdfs:comment "Tenggiri @my"^^xsd:string ;
+                 rdfs:isDefinedBy "Atlas"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Spinach
+:Spinach rdf:type owl:NamedIndividual ,
+                  :LeafyVegetables ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasMealTimeSuggest :Dinner ,
+                             :Lunch ;
+         :hasServingSize :Cup ;
+         :hasCHO "1.09"^^xsd:float ;
+         :hasEnergy "7.0"^^xsd:float ;
+         :hasFat "0.12"^^xsd:float ;
+         :hasFibre "0.7"^^xsd:float ;
+         :hasPotassium "167.0"^^xsd:float ;
+         :hasProtein "0.86"^^xsd:float ;
+         :hasServingSizeUnit "1.0"^^xsd:float ;
+         :hasSodium "24.0"^^xsd:float ;
+         rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Squid
+:Squid rdf:type owl:NamedIndividual ,
+                :Mollusc ;
+       :hasAllergic :ShellFish ;
+       :hasMealTimeSuggest :Dinner ,
+                           :Lunch ;
+       :hasServingSize :WholeSmall ;
+       :hasCholesterol "44.7"^^xsd:float ;
+       :hasEnergy "30.0"^^xsd:float ;
+       :hasFat "0.5"^^xsd:float ;
+       :hasPotassium "24.0"^^xsd:float ;
+       :hasProtein "6.3"^^xsd:float ;
+       :hasServingSizeUnit "1.0"^^xsd:float ;
+       :hasSodium "38.7"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Starfruit
+:Starfruit rdf:type owl:NamedIndividual ,
+                    :TenSeedFruit ;
+           :hasDiseaseSuggest :Diabetes ;
+           :hasMealTimeSuggest :AfternoonSnack ,
+                               :Breakfast ,
+                               :MorningSnack ;
+           :hasServingSize :WholeMedium ;
+           :hasCHO "12.25"^^xsd:float ;
+           :hasEnergy "56.0"^^xsd:float ;
+           :hasFibre "5.1"^^xsd:float ;
+           :hasServingSizeUnit "2.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Steamed
+:Steamed rdf:type owl:NamedIndividual ,
+                  :FoodStatus .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SteamedFish
+:SteamedFish rdf:type owl:NamedIndividual ,
+                      :SeafoodDishes ;
+             :hasMainIngsFirst :Grouper ;
+             :hasRaceSuggest :Chinese ;
+             :hasMainIngsFirstPortion "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#StirFriedBitterGourd
+:StirFriedBitterGourd rdf:type owl:NamedIndividual ,
+                               :VegetableDishes ;
+                      :hasMainIngsFirst :BitterGourd ;
+                      :hasMainIngsSecond :CornOil ;
+                      :hasMainIngsThird :Anchovies ;
+                      :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                      :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                      :hasMainIngsThirdPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#StirFriedChineseKale
+:StirFriedChineseKale rdf:type owl:NamedIndividual ,
+                               :VegetableDishes ;
+                      :hasMainIngsFirst :ChineseKale ;
+                      :hasMainIngsSecond :Anchovies ;
+                      :hasMainIngsThird :CornOil ;
+                      :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                      :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                      :hasMainIngsThirdPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#StirFriedFrenchBeans
+:StirFriedFrenchBeans rdf:type owl:NamedIndividual ,
+                               :VegetableDishes ;
+                      :hasMainIngsFirst :FrenchBeans ;
+                      :hasMainIngsSecond :CornOil ;
+                      :hasMainIngsThird :Anchovies ;
+                      :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                      :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                      :hasMainIngsThirdPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#StirFriedLongMelon
+:StirFriedLongMelon rdf:type owl:NamedIndividual ,
+                             :VegetableDishes ;
+                    :hasMainIngsFirst :LongMelon ;
+                    :hasMainIngsSecond :CornOil ;
+                    :hasMainIngsThird :Anchovies ;
+                    :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                    :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                    :hasMainIngsThirdPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#StirFriedMungBeanSprouts
+:StirFriedMungBeanSprouts rdf:type owl:NamedIndividual ,
+                                   :VegetableDishes ;
+                          :hasMainIngsFirst :MungBeanSprouts ;
+                          :hasMainIngsSecond :CornOil ;
+                          :hasMainIngsThird :Anchovies ;
+                          :hasSecondIngsFirst :RegularTofu ;
+                          :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                          :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                          :hasMainIngsThirdPortion "0.5"^^xsd:float ;
+                          :hasSecondIngsFirstPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Strawberry
+:Strawberry rdf:type owl:NamedIndividual ,
+                     :BerriesFruits ;
+            :hasDiseaseSuggest :Diabetes ;
+            :hasMealTimeSuggest :AfternoonSnack ,
+                                :Breakfast ,
+                                :MorningSnack ;
+            :hasServingSize :Cup ;
+            :hasCHO "13.3"^^xsd:float ;
+            :hasEnergy "57.0"^^xsd:float ;
+            :hasFibre "4.4"^^xsd:float ;
+            :hasServingSizeUnit "1.25"^^xsd:float ;
+            rdfs:isDefinedBy "Dbts book"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SugarFree
+:SugarFree rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SugarSubstitutes
+:SugarSubstitutes rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SunflowerSeeds
+:SunflowerSeeds rdf:type owl:NamedIndividual ,
+                         :Seeds ;
+                :hasDiseaseSuggest :Diabetes ;
+                :hasMealTimeSuggest :Breakfast ;
+                :hasServingSize :Tablespoon ;
+                :hasEnergy "47.0"^^xsd:float ;
+                :hasFat "4.0"^^xsd:float ;
+                :hasMUFA "0.8"^^xsd:float ;
+                :hasPUFA "2.6"^^xsd:float ;
+                :hasSaturatedFat "0.4"^^xsd:float ;
+                :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#SweetPotato
+:SweetPotato rdf:type owl:NamedIndividual ,
+                      :StarchyVegetables ;
+             :hasDiseaseSuggest :Diabetes ;
+             :hasMealTimeSuggest :AfternoonSnack ,
+                                 :MorningSnack ;
+             :hasServingSize :CupCubes ;
+             :hasCHO "13.38"^^xsd:float ;
+             :hasEnergy "57.0"^^xsd:float ;
+             :hasFat "0.03"^^xsd:float ;
+             :hasFibre "2.0"^^xsd:float ;
+             :hasPotassium "224.0"^^xsd:float ;
+             :hasProtein "1.04"^^xsd:float ;
+             :hasServingSizeUnit "0.5"^^xsd:float ;
+             :hasSodium "37.0"^^xsd:float ;
+             rdfs:comment """Ubi Keledek @my
+"""^^xsd:string ;
+             rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Tablespoon
+:Tablespoon rdf:type owl:NamedIndividual ,
+                     :ServingSizeUnit ;
+            rdfs:label """monounsaturated
+adj. Chemistry (of an organic compound, especially a fat) saturated except for one multiple bond. @oxford"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Tangerine
+:Tangerine rdf:type owl:NamedIndividual ,
+                    :CitrusFruits ;
+           :hasDiseaseSuggest :Diabetes ;
+           :hasMealTimeSuggest :AfternoonSnack ,
+                               :Breakfast ,
+                               :MorningSnack ;
+           :hasServingSize :WholeMedium ;
+           :hasEnergy "1.0"^^xsd:float ,
+                      "15.4"^^xsd:float ,
+                      "74.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Teaspoon
+:Teaspoon rdf:type owl:NamedIndividual ,
+                   :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Tempeh
+:Tempeh rdf:type owl:NamedIndividual ,
+                 :SoyaBeansProducts ;
+        :hasDiseaseSuggest :Diabetes .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Tomato
+:Tomato rdf:type owl:NamedIndividual ,
+                 :FruitVegetables ;
+        :hasDiseaseSuggest :Diabetes ;
+        :hasMealTimeSuggest :Dinner ,
+                            :Lunch ;
+        :hasServingSize :CupSlices ;
+        :hasCHO "7.0"^^xsd:float ;
+        :hasEnergy "32.0"^^xsd:float ;
+        :hasFibre "2.2"^^xsd:float ;
+        :hasProtein "1.58"^^xsd:float ;
+        :hasServingSizeUnit "1.0"^^xsd:float ;
+        rdfs:isDefinedBy "USDA"^^xsd:string ;
+        rdfs:label "Lycopersicum esculentum @sc"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#TomyamRiceNoodle
+:TomyamRiceNoodle rdf:type owl:NamedIndividual ,
+                           :CerealBasedDishes ;
+                  :hasMainIngsFifth :CornOil ;
+                  :hasMainIngsFirst :RiceNoodle ;
+                  :hasMainIngsFourth :ChickenBreast ;
+                  :hasMainIngsSecond :Tomato ;
+                  :hasMainIngsSeventh :Broccoli ;
+                  :hasMainIngsSixth :Carrot ;
+                  :hasMainIngsThird :Cauliflower ;
+                  :hasRaceSuggest :Malay ;
+                  :hasMainIngsFifthPortion "0.5"^^xsd:float ;
+                  :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                  :hasMainIngsFourthPortion "0.5"^^xsd:float ;
+                  :hasMainIngsSecondPortion "0.25"^^xsd:float ;
+                  :hasMainIngsSeventhPortion "0.25"^^xsd:float ;
+                  :hasMainIngsSixthPortion "0.25"^^xsd:float ;
+                  :hasMainIngsThirdPortion "0.25"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#TomyamSeafood
+:TomyamSeafood rdf:type owl:NamedIndividual ,
+                        :SeafoodDishes ;
+               :hasMainIngsFirst :PinkPrawn ;
+               :hasMainIngsSecond :Squid ;
+               :hasSecondIngsFirst :Cauliflower ;
+               :hasSecondIngsSecond :Carrot ;
+               :hasSecondIngsThird :Tomato ;
+               :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+               :hasMainIngsSecondPortion "1.0"^^xsd:float ;
+               :hasSecondIngsFirstPortion "0.5"^^xsd:float ;
+               :hasSecondIngsSecondPortion "0.5"^^xsd:float ;
+               :hasSecondIngsThirdPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#TreeNut
+:TreeNut rdf:type owl:NamedIndividual ,
+                  :AllergyFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Tuna
+:Tuna rdf:type owl:NamedIndividual ,
+               :Saltwater ;
+      :hasAllergic :Fishes ;
+      :hasDiseaseSuggest :Diabetes ;
+      :hasMealTimeSuggest :Dinner ,
+                          :Lunch ;
+      :hasServingSize :Piece ;
+      :hasEnergy "36.5"^^xsd:float ;
+      :hasFat "0.85"^^xsd:float ;
+      :hasProtein "7.3"^^xsd:float ;
+      :hasServingSizeUnit "0.5"^^xsd:float ;
+      :hasSodium "16.0"^^xsd:float ;
+      rdfs:comment "Ikan tongkol @my"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#TunaInWater
+:TunaInWater rdf:type owl:NamedIndividual ,
+                      :Saltwater ;
+             :hasAllergic :Fishes ;
+             :hasDiseaseSuggest :Diabetes ;
+             :hasFoodStatus :Cooked ;
+             :hasMealTimeSuggest :Breakfast ;
+             :hasServingSize :Tablespoon ;
+             :hasCholesterol "8.0"^^xsd:float ;
+             :hasEnergy "33.0"^^xsd:float ;
+             :hasFat "0.2"^^xsd:float ;
+             :hasProtein "7.2"^^xsd:float ;
+             :hasSaturatedFat "0.1"^^xsd:float ;
+             :hasServingSizeUnit "2.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#UHTLowFatMilk
+:UHTLowFatMilk rdf:type owl:NamedIndividual ,
+                        :LowFatMilks ;
+               :hasAllergic :CowMilk .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Vegetables
+:Vegetables rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Walnuts
+:Walnuts rdf:type owl:NamedIndividual ,
+                  :Nut ;
+         :hasAllergic :Peanut ,
+                      :TreeNut ;
+         :hasDiseaseSuggest :Diabetes ;
+         :hasFoodStatus :Cooked ;
+         :hasMealTimeSuggest :AfternoonSnack ,
+                             :Breakfast ,
+                             :MorningSnack ;
+         :hasServingSize :Halves ;
+         :hasEnergy "52.0"^^xsd:float ;
+         :hasFat "5.2"^^xsd:float ;
+         :hasMUFA "0.7"^^xsd:float ;
+         :hasPUFA "3.8"^^xsd:float ;
+         :hasSaturatedFat "0.5"^^xsd:float ;
+         :hasServingSizeUnit "4.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WaterDropwort
+:WaterDropwort rdf:type owl:NamedIndividual ,
+                        :LeafyVegetables ;
+               :hasMealTimeSuggest :Dinner ,
+                                   :Lunch ;
+               :hasRaceSuggest :Malay ;
+               :hasCHO "1.9"^^xsd:float ;
+               :hasEnergy "11.0"^^xsd:float ;
+               :hasFat "0.2"^^xsd:float ;
+               :hasFibre "0.4"^^xsd:float ;
+               :hasPotassium "113.0"^^xsd:float ;
+               :hasProtein "0.5"^^xsd:float ;
+               :hasSodium "14.0"^^xsd:float ;
+               rdfs:comment "Daun Selom @my"^^xsd:string ;
+               rdfs:isDefinedBy "FCD"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WateryAngledLoofah
+:WateryAngledLoofah rdf:type owl:NamedIndividual ,
+                             :VegetableDishes ;
+                    :hasMainIngsFirst :AngledLoofah ;
+                    :hasMainIngsSecond :Anchovies ;
+                    :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                    :hasMainIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WateryCabbage
+:WateryCabbage rdf:type owl:NamedIndividual ,
+                        :VegetableDishes ;
+               :hasMainIngsFirst :Cabbage ;
+               :hasMainIngsSecond :Anchovies ;
+               :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+               :hasMainIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WateryChineseCabbage
+:WateryChineseCabbage rdf:type owl:NamedIndividual ,
+                               :VegetableDishes ;
+                      :hasMainIngsFirst :ChineseCabbage ;
+                      :hasMainIngsSecond :Anchovies ;
+                      :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                      :hasMainIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WateryCuttlefish
+:WateryCuttlefish rdf:type owl:NamedIndividual .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WateryFish
+:WateryFish rdf:type owl:NamedIndividual ,
+                     :SeafoodDishes ;
+            :hasMainIngsFirst :Tuna ;
+            :hasRaceSuggest :Malay ;
+            :hasMainIngsFirstPortion "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WateryMustardGreen
+:WateryMustardGreen rdf:type owl:NamedIndividual ,
+                             :VegetableDishes ;
+                    :hasMainIngsFirst :MustardGreen ;
+                    :hasMainIngsSecond :Anchovies ;
+                    :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                    :hasMainIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WateryPumpkin
+:WateryPumpkin rdf:type owl:NamedIndividual ,
+                        :VegetableDishes ;
+               :hasMainIngsFirst :Pumpkin ;
+               :hasMainIngsSecond :Anchovies ;
+               :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+               :hasMainIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WaterySpinach
+:WaterySpinach rdf:type owl:NamedIndividual ,
+                        :VegetableDishes ;
+               :hasMainIngsFirst :Spinach ;
+               :hasMainIngsSecond :Anchovies ;
+               :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+               :hasMainIngsSecondPortion "0.5"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WaterySquid
+:WaterySquid rdf:type owl:NamedIndividual ,
+                      :SeafoodDishes ;
+             :hasMainIngsFirst :Squid ;
+             :hasRaceSuggest :Malay ;
+             :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+             rdfs:comment "Singgang sotong @my"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WateryWhiteRadish
+:WateryWhiteRadish rdf:type owl:NamedIndividual ,
+                            :VegetableDishes ;
+                   :hasMainIngsFirst :WhiteRadish ;
+                   :hasMainIngsSecond :Anchovies ;
+                   :hasMainIngsFirstPortion "1.0"^^xsd:float ;
+                   :hasMainIngsSecondPortion "0.5"^^xsd:float ;
+                   rdfs:comment """Lobak Putih @BM
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WetNoodleLaksa
+:WetNoodleLaksa rdf:type owl:NamedIndividual ,
+                         :RiceAndRiceProducts .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Wheat
+:Wheat rdf:type owl:NamedIndividual ,
+                :AllergyFoods .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WhiteRadish
+:WhiteRadish rdf:type owl:NamedIndividual ,
+                      :TuberVegetables ;
+             :hasFoodStatus :Cooked ;
+             :hasMealTimeSuggest :Dinner ,
+                                 :Lunch ;
+             :hasServingSize :CupSlices ;
+             :hasCHO "2.52"^^xsd:float ;
+             :hasEnergy "12.0"^^xsd:float ;
+             :hasFibre "1.2"^^xsd:float ;
+             :hasProtein "0.49"^^xsd:float ;
+             :hasServingSizeUnit "0.5"^^xsd:float ;
+             :language "nice"^^xsd:token ;
+             rdfs:comment "Lobak Putih @my"^^xsd:string ;
+             rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WhiteRice
+:WhiteRice rdf:type owl:NamedIndividual ,
+                    :RiceAndRiceProducts ;
+           :hasFoodStatus :Cooked ;
+           :hasMealTimeSuggest :Lunch ;
+           :hasServingSize :Cup ;
+           :hasCHO "17.73"^^xsd:float ;
+           :hasEnergy "81.0"^^xsd:float ;
+           :hasFat "0.13"^^xsd:float ;
+           :hasFibre "0.2"^^xsd:float ;
+           :hasProtein "1.48"^^xsd:float ;
+           :hasSodium "0.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Whole
+:Whole rdf:type owl:NamedIndividual ,
+                :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WholeMealBread
+:WholeMealBread rdf:type owl:NamedIndividual ,
+                         :Breads ;
+                :hasDiseaseSuggest :Diabetes ;
+                :hasMealTimeSuggest :Breakfast ;
+                :hasServedWith :LowerFatMargarine ,
+                               :PeanutButter ,
+                               :TunaInWater ;
+                :hasServingSize :Slice ;
+                :hasCHO "11.0"^^xsd:float ;
+                :hasEnergy "73.0"^^xsd:float ;
+                :hasFat "0.7"^^xsd:float ;
+                :hasFibre "2.5"^^xsd:float ;
+                :hasServingSizeUnit "1.0"^^xsd:float ;
+                rdfs:isDefinedBy "Gardenia"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WholeMealChapatti
+:WholeMealChapatti rdf:type owl:NamedIndividual ,
+                            :Breads ;
+                   :hasDiseaseSuggest :Diabetes ;
+                   :hasMealTimeSuggest :Breakfast ;
+                   :hasRaceSuggest :Indian ;
+                   :hasServedWith :DhalGravy ;
+                   :hasServingSize :SmallSixInchAcross ;
+                   :hasCHO "15.1"^^xsd:float ;
+                   :hasEnergy "71.0"^^xsd:float ;
+                   :hasFat "0.4"^^xsd:float ;
+                   :hasFibre "1.9"^^xsd:float ;
+                   :hasServingSizeUnit "1.0"^^xsd:float .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WholeMedium
+:WholeMedium rdf:type owl:NamedIndividual ,
+                      :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WholeSmall
+:WholeSmall rdf:type owl:NamedIndividual ,
+                     :ServingSizeUnit .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#WinterMelon
+:WinterMelon rdf:type owl:NamedIndividual ,
+                      :FruitVegetables ;
+             :hasMealTimeSuggest :Lunch ;
+             :hasRaceSuggest :Chinese ;
+             :hasServingSize :CupCubes ;
+             :hasCHO "3.96"^^xsd:float ;
+             :hasEnergy "17.0"^^xsd:float ;
+             :hasFat "0.26"^^xsd:float ;
+             :hasFibre "3.8"^^xsd:float ;
+             :hasPotassium "8.0"^^xsd:float ;
+             :hasProtein "0.53"^^xsd:float ;
+             :hasSodium "147.0"^^xsd:float ;
+             rdfs:comment """Kundur @my
+wax gourd @en
+chinese preserving melon @en
+
+"""^^xsd:string ;
+             rdfs:isDefinedBy "USDA"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#Yam
+:Yam rdf:type owl:NamedIndividual ,
+              :StarchyVegetables ;
+     :hasMealTimeSuggest :AfternoonSnack ,
+                         :MorningSnack ;
+     :hasServingSize :CupCubes ;
+     :hasCHO "20.91"^^xsd:float ;
+     :hasEnergy "88.0"^^xsd:float ;
+     :hasFat "0.13"^^xsd:float ;
+     :hasFibre "3.1"^^xsd:float ;
+     :hasPotassium "612.0"^^xsd:float ;
+     :hasProtein "1.15"^^xsd:float ;
+     :hasServingSizeUnit "0.5"^^xsd:float ;
+     :hasSodium "7.0"^^xsd:float ;
+     rdfs:comment """Ubi Keladi @my
+"""^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#YellowBandedTrevally
+:YellowBandedTrevally rdf:type owl:NamedIndividual ,
+                               :Saltwater ;
+                      :hasAllergic :Fishes ;
+                      :hasDiseaseSuggest :Diabetes ;
+                      :hasMealTimeSuggest :Dinner ,
+                                          :Lunch ;
+                      :hasServingSize :WholeMedium ;
+                      :hasEnergy "49.5"^^xsd:float ;
+                      :hasFat "1.1"^^xsd:float ;
+                      :hasPotassium "122.0"^^xsd:float ;
+                      :hasProtein "10.0"^^xsd:float ;
+                      :hasServingSizeUnit "0.5"^^xsd:float ;
+                      :hasSodium "20.0"^^xsd:float ;
+                      rdfs:comment "SelarKuning @my"^^xsd:string .
+
+
+###  http://www.ftsm.ukm.edu.my/myFEL#YellowDhal
+:YellowDhal rdf:type owl:NamedIndividual ,
+                     :Lentils ;
+            :hasDiseaseSuggest :Diabetes ;
+            :hasFoodStatus :Boiled ;
+            :hasMealTimeSuggest :AfternoonSnack ,
+                                :Breakfast ,
+                                :Lunch ,
+                                :MorningSnack ;
+            :hasRaceSuggest :Indian ;
+            :hasServingSize :Cup ;
+            :hasCHO "19.93"^^xsd:float ;
+            :hasEnergy "115.0"^^xsd:float ;
+            :hasFat "0.38"^^xsd:float ;
+            :hasFibre "7.8"^^xsd:float ;
+            :hasProtein "8.93"^^xsd:float ;
+            :hasServingSizeUnit "0.5"^^xsd:float ;
+            rdfs:comment "Cajanus cajan @sc"^^xsd:string ,
+                         """Kacang Dal @my
+
+
+
+"""^^xsd:string .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Beef rdfs:comment """The flesh of a cow, bull, or ox, used as food. @OD
+
+meat from a cow or bull @PC"""^^xsd:string ;
+      rdfs:label "Beef"^^xsd:string .
+
+
+:Eggs rdfs:comment """an infertile egg, typically of the domestic hen, used for food. @OD
+
+a chicken's egg, used as food; @PC"""^^xsd:string ;
+      rdfs:label "Egg"^^xsd:string .
+
+
+:Meat rdfs:comment "The food group of proteins which consist of the flesh of an animal (especially a mammal) as food."^^xsd:string ;
+      rdfs:isDefinedBy "Oxford Dictionary."^^xsd:string ;
+      rdfs:label "Meat"^^xsd:string .
+
+
+:Nuts rdfs:comment "A fruit of a tree, with a hard shell; almonds and brazils are sorts of nut @PC"^^xsd:string .
+
+
+:Seafood rdfs:comment "The food group of proteins which consist of shellfish and sea fish served as food."^^xsd:string ;
+         rdfs:isDefinedBy "Oxford dictionary"^^xsd:string ;
+         rdfs:label "Seafood"^^xsd:string .
+
+
+:Vegetables rdfs:comment "The food group of carbohydrates which consist of local vegetables that can be eaten by diabetic."^^xsd:string ;
+            rdfs:label "Vegetable"^^xsd:string .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BananaFruit
+                :FifteenSeedFruit
+                :OneStoneFruit
+                :TenSeedFruit
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BerriesFruits
+                :CitrusFruits
+                :DriedFruits
+                :MalaceousFruits
+                :PrunusFruits
+                :StoneFruits
+                :SubTropicalFruits
+                :TropicalFruits
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Carbohydrates
+                :Fats
+                :Proteins
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CerealGrains
+                :RiceAndRiceProducts
+                :WheatAndWheatProducts
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FlowerVegetables
+                :FruitVegetables
+                :LeafyVegetables
+                :LegumeVegetables
+                :TuberVegetables
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

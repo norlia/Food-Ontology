@@ -1,0 +1,448 @@
+{
+  "@context" : {
+    "SeafoodDishes" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#SeafoodDishes"
+    },
+    "Eggs" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Eggs"
+    },
+    "hasMainIngsThird" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsThird",
+      "@type" : "@id"
+    },
+    "SegmentedFruits" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#SegmentedFruits"
+    },
+    "hasMainIngsSeventhPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSeventhPortion"
+    },
+    "hasFoodStatus" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasFoodStatus",
+      "@type" : "@id"
+    },
+    "hasEdible" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasEdible",
+      "@type" : "@id"
+    },
+    "DairyLikeFoods" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#DairyLikeFoods"
+    },
+    "hasDiseaseSuggest" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasDiseaseSuggest",
+      "@type" : "@id"
+    },
+    "FinFish" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#FinFish"
+    },
+    "CerealGrains" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#CerealGrains"
+    },
+    "hasServingSize" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasServingSize",
+      "@type" : "@id"
+    },
+    "BerriesFruits" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#BerriesFruits"
+    },
+    "hasMainIngsFourthPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFourthPortion"
+    },
+    "Nuts" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Nuts"
+    },
+    "hasMainIngsFifth" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFifth",
+      "@type" : "@id"
+    },
+    "Oil" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Oil"
+    },
+    "hasMainIngsSixth" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSixth",
+      "@type" : "@id"
+    },
+    "Saltwater" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Saltwater"
+    },
+    "hasMUFA" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMUFA"
+    },
+    "hasServingSizeUnit" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasServingSizeUnit"
+    },
+    "hasMainIngsSixthPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSixthPortion"
+    },
+    "hasSaturatedFat" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasSaturatedFat"
+    },
+    "CitrusFruits" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#CitrusFruits"
+    },
+    "Oils" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Oils"
+    },
+    "Crackers" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Crackers"
+    },
+    "Meat" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Meat"
+    },
+    "hasCondiment" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasCondiment",
+      "@type" : "@id"
+    },
+    "Starches" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Starches"
+    },
+    "LeafyVegetables" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#LeafyVegetables"
+    },
+    "FlowerVegetables" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#FlowerVegetables"
+    },
+    "MealTime" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#MealTime"
+    },
+    "IsServedWith" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#IsServedWith",
+      "@type" : "@id"
+    },
+    "hasSodium" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasSodium"
+    },
+    "FifteenSeedFruit" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#FifteenSeedFruit"
+    },
+    "RiceAndRiceProducts" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#RiceAndRiceProducts"
+    },
+    "LegumeVegetables" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#LegumeVegetables"
+    },
+    "Fruit" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Fruit"
+    },
+    "PUFA" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#PUFA"
+    },
+    "hasAllergic" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasAllergic",
+      "@type" : "@id"
+    },
+    "Carbohydrates" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Carbohydrates"
+    },
+    "hasMealTimeSuggest" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMealTimeSuggest",
+      "@type" : "@id"
+    },
+    "TuberVegetables" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#TuberVegetables"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Beef" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Beef"
+    },
+    "SaladVegetables" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#SaladVegetables"
+    },
+    "RawAndProcessedFoods" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#RawAndProcessedFoods"
+    },
+    "BananaFruit" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#BananaFruit"
+    },
+    "hasEnergy" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasEnergy"
+    },
+    "hasMainIngsSecond" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSecond",
+      "@type" : "@id"
+    },
+    "hasReligionAvoid" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasReligionAvoid",
+      "@type" : "@id"
+    },
+    "CerealBasedDishes" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#CerealBasedDishes"
+    },
+    "NutButters" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#NutButters"
+    },
+    "Milk" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Milk"
+    },
+    "hasSecondIngsFirst" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsFirst",
+      "@type" : "@id"
+    },
+    "Fruits" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Fruits"
+    },
+    "Disease" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Disease"
+    },
+    "PrunusFruits" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#PrunusFruits"
+    },
+    "hasSecondIngsSecond" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsSecond",
+      "@type" : "@id"
+    },
+    "hasSecondIngsThird" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsThird",
+      "@type" : "@id"
+    },
+    "TropicalFruits" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#TropicalFruits"
+    },
+    "hasMainIngsFifthPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFifthPortion"
+    },
+    "hasMainIngsSecondPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSecondPortion"
+    },
+    "FoodStatus" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#FoodStatus"
+    },
+    "ProhibitFood" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#ProhibitFood"
+    },
+    "Race" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Race"
+    },
+    "hasFibre" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasFibre"
+    },
+    "Vegetables" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Vegetables"
+    },
+    "hasSeasonings" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasSeasonings",
+      "@type" : "@id"
+    },
+    "Poultry" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Poultry"
+    },
+    "Beans" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Beans"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "hasSecondIngsSecondPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsSecondPortion"
+    },
+    "Crustacean" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Crustacean"
+    },
+    "hasMainIngsFourth" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFourth",
+      "@type" : "@id"
+    },
+    "Seafood" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Seafood"
+    },
+    "Lamb" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Lamb"
+    },
+    "AllergyFoods" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#AllergyFoods"
+    },
+    "hasSecondIngsFirstPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsFirstPortion"
+    },
+    "LowCHOFoods" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#LowCHOFoods"
+    },
+    "ServingSizeUnit" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#ServingSizeUnit"
+    },
+    "hasSeasoningPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasSeasoningPortion"
+    },
+    "TenSeedFruit" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#TenSeedFruit"
+    },
+    "CookedFoods" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#CookedFoods"
+    },
+    "MeatDishes" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#MeatDishes"
+    },
+    "Breads" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Breads"
+    },
+    "hasMainIngsSeventh" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsSeventh",
+      "@type" : "@id"
+    },
+    "Shellfish" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Shellfish"
+    },
+    "FreeFoods" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#FreeFoods"
+    },
+    "hasExchange" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasExchange",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Lentils" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Lentils"
+    },
+    "FruitVegetables" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#FruitVegetables"
+    },
+    "Freshwater" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Freshwater"
+    },
+    "hasRaceSuggest" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasRaceSuggest",
+      "@type" : "@id"
+    },
+    "hasCholesterol" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasCholesterol"
+    },
+    "hasMainIngsThirdPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsThirdPortion"
+    },
+    "MalaceousFruits" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#MalaceousFruits"
+    },
+    "hasCompanion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasCompanion",
+      "@type" : "@id"
+    },
+    "MonounsaturatedFats" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#MonounsaturatedFats"
+    },
+    "PlantBased" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#PlantBased"
+    },
+    "hasMainIngsFirstPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFirstPortion"
+    },
+    "Religion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Religion"
+    },
+    "Proteins" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Proteins"
+    },
+    "Nut" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Nut"
+    },
+    "hasTukar" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasTukar",
+      "@type" : "@id"
+    },
+    "StarchyVegetables" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#StarchyVegetables"
+    },
+    "StoneFruits" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#StoneFruits"
+    },
+    "OneStoneFruit" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#OneStoneFruit"
+    },
+    "Spread" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Spread"
+    },
+    "Peas" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Peas"
+    },
+    "Fats" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Fats"
+    },
+    "ModifiedFatFoods" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#ModifiedFatFoods"
+    },
+    "Condiments" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Condiments"
+    },
+    "SaturatedFats" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#SaturatedFats"
+    },
+    "isTukar" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#isTukar",
+      "@type" : "@id"
+    },
+    "hasServedWith" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasServedWith",
+      "@type" : "@id"
+    },
+    "hasCHO" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasCHO"
+    },
+    "hasSecondIngsThirdPortion" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasSecondIngsThirdPortion"
+    },
+    "LowFatMilks" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#LowFatMilks"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "PlantBasedDishes" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#PlantBasedDishes"
+    },
+    "VegetableDishes" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#VegetableDishes"
+    },
+    "language" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#language"
+    },
+    "hasPUFA" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasPUFA"
+    },
+    "hasProtein" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasProtein"
+    },
+    "hasFat" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasFat"
+    },
+    "hasServingSizeFree" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasServingSizeFree",
+      "@type" : "@id"
+    },
+    "DriedFruits" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#DriedFruits"
+    },
+    "hasProhibit" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasProhibit",
+      "@type" : "@id"
+    },
+    "Seeds" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Seeds"
+    },
+    "SubTropicalFruits" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#SubTropicalFruits"
+    },
+    "hasPotassium" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasPotassium"
+    },
+    "hasMealTimeAvoid" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMealTimeAvoid",
+      "@type" : "@id"
+    },
+    "Mollusc" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#Mollusc"
+    },
+    "SoyaBeansProducts" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#SoyaBeansProducts"
+    },
+    "WheatAndWheatProducts" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#WheatAndWheatProducts"
+    },
+    "hasMainIngsFirst" : {
+      "@id" : "http://www.ftsm.ukm.edu.my/myFEL#hasMainIngsFirst",
+      "@type" : "@id"
+    }
+  }
+}
